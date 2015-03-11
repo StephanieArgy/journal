@@ -278,3 +278,152 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/*********************
+COLORS
+*********************
+
+primary color -
+text color -
+hover color -
+visited color -
+background color -
+accent color -
+warning color -
+error color -  */
+
+
+header {
+  background-color: black;
+  color:white;
+  padding:1% 4%;
+  overflow:auto;
+}
+
+header h1 {
+  float: left;
+}
+
+.mainMenu {
+  list-style:none;
+  float: right;
+  font-variant: small-caps;
+}
+
+.mainMenu li {
+  display: inline-block;
+  text-align:right;
+  font-weight: 800;
+	padding: 15px 10px;
+}
+
+.mainMenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.mainMenu a:visited {
+  color:white;
+}
+
+.mainMenu a:hover {
+  color:red;
+}
+
+.mainMenuIcon {
+  max-width: 35px;
+}
+
+main {
+  clear:both;
+}
+
+.articleLinks {
+  background-color:#ffe8b2;
+  border: orange double;
+  float: left;
+  color:black;
+  margin:2%;
+  width:30%;
+  max-width:360px;
+}
+
+.articleLinks ul {
+  font-weight:800;
+  list-style: none;
+  margin-left: 0;
+}
+
+.articleLinks a {
+  color:black;
+  text-decoration: none;
+}
+
+.articleLinks a:visited {
+    color:#555;
+    text-decoration: none;
+}
+
+.articleLinks a:hover {
+  color:red;
+  text-decoration: none;
+}
+
+img.logo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.journal {
+  margin-left: 34%;
+  border-left:solid black;
+}
+
+.articleHeader {
+  background-color:#bbb;
+  color: #444;
+  min-height:0;
+}
+
+.articleHeader h1 {
+  padding: 0;
+}
+
+.articleHeader h2 {
+  padding:0;
+}
+
+.articleText {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.weekNumber {
+  text-transform: uppercase;
+}
+
+.computerCommand {
+  color:red;
+}
+
+#gitMentalImage {
+  float:right;
+  max-width:50%;
+}
+
+.articleFooter {
+  color: #888;
+  font-size: smaller;
+  font-style:italic;
+  text-align: center;
+}
+
+.mainFooter{
+  background:black;
+  clear:both;
+  color:white;
+  padding:2%;
+  text-align: right;
+}
