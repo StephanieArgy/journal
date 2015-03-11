@@ -12,6 +12,7 @@
 
 html {
     color: #222;
+    font-family: Georgia, Serif;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -285,16 +286,17 @@ COLORS
 
 primary color -
 text color -
-hover color -
+hover color - #e60015
 visited color -
-background color -
+background color - main header/footer - #400003
+background color - article header - #d5e5d3
 accent color -
 warning color -
 error color -  */
 
 
 header {
-  background-color: black;
+  background-color: #400003;
   color:white;
   padding:1% 4%;
   overflow:auto;
@@ -327,7 +329,7 @@ header h1 {
 }
 
 .mainMenu a:hover {
-  color:red;
+  color:#e60015;
 }
 
 .mainMenuIcon {
@@ -336,6 +338,7 @@ header h1 {
 
 main {
   clear:both;
+  background:#0d0b0c;
 }
 
 .articleLinks {
@@ -365,7 +368,7 @@ main {
 }
 
 .articleLinks a:hover {
-  color:red;
+  color:#e60015;
   text-decoration: none;
 }
 
@@ -377,12 +380,15 @@ img.logo {
 }
 
 .journal {
+  background:white;
   margin-left: 34%;
   border-left:solid black;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .articleHeader {
-  background-color:#bbb;
+  background-color:#d5e5d3;
   color: #444;
   min-height:0;
 }
@@ -421,9 +427,10 @@ img.logo {
 }
 
 .mainFooter{
-  background:black;
+  background:#400003;
   clear:both;
   color:white;
   padding:2%;
   text-align: right;
+  margin-top: 0;
 }
