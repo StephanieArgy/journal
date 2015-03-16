@@ -21,42 +21,48 @@
 
         <!-- Add your site or application content here -->
       <header>
-          <h1>My Web Foundations Journal</h1>
           <ul class="mainMenu">
             <li><a href="mailto:steph@mentalslapstick.com"><img src="img/email.png" class="mainMenuIcon">Email</a></li>
             <li><img src="img/brainstorm.png"  class="mainMenuIcon">Portfolio</li>
             <li><img src="img/gear.png"  class="mainMenuIcon">My github</li>
           </ul>
-      </header>
+          <h1>My Web Foundations Journal</h1>
+          </header>
 
       <main>
-        <section class="linksAndlogo">
         <nav class="articleLinks">
           <ul>
             <li><a href="#firstSaturday">FIRST WEEK: Saturday, March 7</a></li>
             <li><a href="#firstMonday">FIRST WEEK: Monday, March 9</a></li>
-            <li>FIRST WEEK: Wednesday, March 11</li>
+            <li><a href="#firstWednesday">FIRST WEEK: Wednesday, March 11</a></li>
+          </ul>
+          <ul>
+          <li><a href="#secondMonday">SECOND WEEK: Monday, March 16</a></li>
+            <li><a href="#secondWednesday">SECOND WEEK: Wednesday, March 18</a></li>
+          </ul>
+          <ul>
+          <li><a href="glossary.html">Glossary</a></li>
           </ul>
           <img src="img/temp-logo.jpg" class="logo">
         </nav>
-        </section>
+      </nav>
 
         <section class="journal">
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" name="firstSaturday">First Week</span>: Saturday, March 7, 2015</h2>
+              <h2><span class="weekNumber" id="firstSaturday">First Week</span>: Saturday, March 7, 2015</h2>
               <h3>Kickoff</h3>
           </header>
             <div class="articleText">
-              <p>First day, six hours long! Learning to learn, meeting each other. Handshake buddy: Jay. high-five buddy: Caleb. (Both MUCH, MUCH taller than me.)</p>
+              <p>First class, six hours long! Learning to learn (including a take-home article called <a href="http://www.opencolleges.edu.au/informed/features/25-things-skilled-learners-do-differently/" title="25 Things Skilled Learners Do Differently" target="blank">25 Things Skilled Learners Do Differently</a>). Meeting each other: My "handshake buddy" is Jay, my "high-five buddy" is Caleb. (Both MUCH, MUCH taller than me.)</p>
               <p>
-                Tools that we're going to use:
+                Tools that we're going to use in this class:
                 <ul>
                   <li>Slack</li>
                   <li>Chrome (and its development tools)</li>
                   <li>Codepen.io</li>
                   <li>Github.com</li>
-                  <li>Atom (Much less intimidating than Sublime)</li>
+                  <li>Atom (I find it much friendlier than Sublime, which we were originally going to use!)</li>
                   <li>Terminal/Gitbash</li>
                 </ul>
               </p>
@@ -72,13 +78,80 @@
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" name="firstMonday">First Week</span>: Monday, March 9, 2015</h2>
+              <h2><span class="weekNumber" id="firstMonday">First Week</span>: Monday, March 9, 2015</h2>
               <h3>Github Hell</h3>
             </header>
             <div class="articleText">
-              <p><img src="img/GitMentalImage.jpg" id="gitMentalImage">Sea of Tranquility rich in mystery. Globular star cluster, something incredible is waiting to be known citizens of distant epochs kindling the energy hidden in matter, cosmic ocean across the centuries Apollonius of Perga take root and flourish decipherment, tesseract, worldlets stirred by starlight, culture a billion trillion. Globular star cluster realm of the galaxies galaxies, a very small stage in a vast cosmic arena, across the centuries hydrogen atoms Cambrian explosion. Ship of the imagination Tunguska event take root and flourish realm of the galaxies colonies concept of the number one.</p>
+              <p>
+                <img src="img/GitMentalImage.jpg" id="gitMentalImage">Second meeting...we walk in, innocently expecting a nice class about HTML and CSS and friendly website-building tools, and instead, we're confronted with three solid hours of Git!  Aughh!</p>
+              <p>
+                And yet...despite a few snafus (like my getting ahead of myself and accidently turning my entire Documents folder into a repository by typing <strong>git init</strong> before I should), the evening goes well.  I feel as though I'm making small tenuous steps, but they all seem to be in a forward direction, so that's good.
+              </p>
+              <p>
+                The most important workflow, at least for now, seems to be this:
+              </p>
+              <p>
+                (Once we have our repositiory set up, on the local drive and remotely:)
+                <ol>
+                  <li><span class="computerCommand">git status</span> - To see what files have to be updated.</li>
+                  <li>If there are some, then <span class="computerCommand">git add</span> to put them into the staging area.</li>
+                  <li><span class="computerCommand">git commit the-file-we're-committing -m"Reason why we're doing the commit"</span> to commit the changes and update the repository.</li>
+                  <li><span class="computerCommand">git merge</span></li>
+                  <li>Then...to put the files on github, <span class="computerCommand">git push</span></li>.
+                </ol>
+              </p>
+              <p>
+                However...I will say that I'm not confident with the order of things, and I'm shaky on the way to specify who merges with whom, and whether I merge locally, or on the remote repository, or both.
+              </p>
             </div>
-            <footer class="articleFooter"></footer>
+            <footer class="articleFooter">Stephanie Argy, March 12, 2015.</footer>
+          </article>
+
+          <article class="journalEntry">
+            <header class="articleHeader">
+              <h2><span class="weekNumber" id="firstWednesday">First Week</span>: Wednesday, March 16, 2015</h2>
+              <h3>Floats and Classes</h3>
+            </header>
+            <div class="articleText">
+              <h4>Float and Overflow</h4>
+              <p>
+                <img src="img/HTMLforFloatDemo.jpg" id="HTMLforFloat">As we do our Agile review at the start of class, it seems as though most people have concerns about floating. Fortunately that's what we spend more of our class time working on, and it becomes clearer.</p>
+              <p>
+                Using the ever-handy CodePen, we build some boxes: a red one, a green one and a blue one.  When they're first popped in to the HTML, with just enough CSS to give them color and dimension, they look like this: </p>
+              <img src="img/CSS_NoFloat_Result.jpg" id="boxesNoFloat">
+              <p>
+                Next...we give our red box the CSS rule <span class="computerCommand">float: left;</span>.
+                Instant trouble! Our red box disappears! This is because while it has floated left, it has been removed from the normal page flow. The green and the blue box no longer even realize that it exists, so they scoot merrily up to the top of the page, covering up their red colleague.  Bad. So...all of the boxes must have <span class="computerCommand">float: left;</span> applied to them, like so:
+              </p>
+              <img src="img/CSS_wfFloat.jpg" id="CSSwFloat">
+              <p>
+                Now, we have a new problem, though, because we made an enclosing box with a border -- and it doesn't know how to handle those floats either, leaving us with an image that looks like this:
+              </p>
+              <img src="img/CSS_wfFloat_Result.jpg" id="CSS_wFloat_Result">
+              <p>
+                The solution is to put one more rule into the CSS for the containing box: <span class="computerCommand">overflow: auto;</span>. The resulting code looks like this:
+              </p>
+              <img src="img/CSS_wfFloatAndOverflow.jpg" id="CSS_wFloatAndOverflow">
+              <p>
+                And the result is:
+              </p>
+              <img src="img/CSS_wFloatAndOverflow_Result.jpg" id="CSS_wFloatAndOverflow_Result">
+              <h4>Class Naming Conventions</h4>
+              <p>
+                One of aspects of web development that has me confused is how to name classes, so that they're semantically meaningful, and don't lead to additional confusion. We talk a little bit about it in class, but afterward, I go looking to see what resources I could find online.  Here are some:
+                <ul>
+                  <li><a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">Thoughts on HTML class naming conventions</a> (Nicolas Gallagher)</li>
+                  <li><a href="http://brettjankord.com/2013/03/06/more-thoughts-on-html-class-naming-conventions/">More thoughts on HTML class naming conventions.</a></li> (This is Brett Jankord's response to the above.)
+                </ul>
+              </p>
+              <p>
+                It's now clear that things are even more complicated than I'd realized. I've stumbled into a religious war -- how do you capitalize? How do you semantically structure the class names?  I'm just looking for easy answers!  Are there none...?
+              </p>
+              <p>
+                More research is definitely required...but for now, I'm going to try my old file-naming trick of going from general to specific. And I'm going to use camel case (with the first letter lower case).  I suspect this will evolve, but at least I have a starting point.
+              </p>
+            </div>
+            <footer class="articleFooter">Stephanie Argy, March 16, 2015.</footer>
           </article>
 
         </section>
