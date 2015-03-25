@@ -311,19 +311,24 @@ header {
 
 header h1 {
   float: left;
+  font-size: 5vw;
+  padding: 0;
+  text-align: center;
 }
 
 .mainMenu {
   list-style:none;
   float: right;
   font-variant: small-caps;
+  margin: 0;
+  padding: 0;
 }
 
 .mainMenu li {
   display: inline-block;
   text-align:right;
   font-weight: 800;
-	padding: 15px 10px;
+	padding: 0px 10px;
 }
 
 .mainMenu a {
@@ -351,17 +356,15 @@ main {
 .articleLinks {
   background-color:#ffe8b2;
   border: orange double;
-  float: left;
   color:black;
   margin:2%;
-  width:30%;
-  max-width:360px;
 }
 
 .articleLinks ul {
   font-weight:800;
   list-style: none;
-  margin-left: 0;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .articleLinks a {
@@ -379,11 +382,8 @@ main {
   text-decoration: none;
 }
 
-img.logo {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+img#logo {
+  display: none;
 }
 
 .mainFooter{
@@ -396,14 +396,13 @@ img.logo {
 }
 
 /****************
-PAGE: Desktop - Journal
+PAGE: Journal
 ****************/
 
 .journal {
   background:white;
-  margin-left: 34%;
   border-left:solid black;
-  margin-bottom: 0;
+  margin: 0 2% 0;
   padding-bottom: 10px;
 }
 
@@ -470,6 +469,7 @@ PAGE: Desktop - Journal
 
 #CSS_wFloat_Result {
   display: block;
+  max-width: 100%;
   width:400px;
   margin-left: auto;
   margin-right: auto;
@@ -484,13 +484,21 @@ PAGE: Desktop - Journal
 
 #CSS_wFloatAndOverflow_Result  {
   display: block;
+  max-width: 100%;
   width:400px;
   margin-left: auto;
   margin-right: auto;
 }
 
+blockquote {
+  background-color: lightgrey;
+  padding: 2%;
+  border: 2px solid darkgrey;
+  border-radius: 3%;
+}
+
 /****************
-PAGE: Desktop - Glossary
+PAGE: Glossary
 ****************/
 
 .glossary {
@@ -517,3 +525,43 @@ PAGE: Desktop - Glossary
   dd {
     margin-bottom: 3%;
     }
+
+/**********
+STYLES FOR LARGER SCREENS
+***********/
+
+/****************
+PAGE: Desktop - Journal
+****************/
+
+@media screen and (min-width: 800px) {
+    header h1 {
+      font-size: 2.8vw;
+    }
+
+    .mainMenu {
+      list-style:none;
+      float: right;
+      font-variant: small-caps;
+      margin: 0;
+      padding-top: 15px;
+    }
+
+    .articleLinks {
+      float: left;
+      width:30%;
+      max-width:360px;
+    }
+
+    img#logo {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .journal {
+      margin-left: 34%;
+    }
+
+}
