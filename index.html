@@ -209,6 +209,42 @@
             <footer class="articleFooter">Stephanie Argy, March 24, 2015.</footer>
           </article>
 
+          <article class="journalEntry">
+            <header class="articleHeader">
+              <h2><span class="weekNumber" id="fifthMonday">Fifth Week</span>: Saturday, March 7, 2015</h2>
+              <h3>Start of Primer Pro</h3>
+          </header>
+            <div class="articleText">
+              <p>Our first JavaScript/jQuery assignment starts with our having to make a repository and establish a remote on github.com.  "This should be review," says the instructions.</p>
+              <p>
+                That being the case, I've made myself a little knucklehead cheatsheet:</p>
+                <h4>To Create a New Project:</h4>
+                <p>
+                  <ol>
+                    <li>On GitHub, make a new repository.</li>
+                    <li>In Terminal, navigate to the directory that will contain the local directory for that respository.</li>
+                    <li>In that directory: <strong>git clone https://github.com/MyGitHubName/repositoryname.git</strong>.</li>
+                    <li>In Terminal, go into newly created local repo clone using <strong>cd</strong>.</li>
+                    <li>Back on GitHub, create a new branch called gh-pages.</li>
+                    <li>In Terminal (and in the new directory): <strong>git fetch origin gh-pages</strong>.  (At this point, only master branch will be visible with git branch.)</li>
+                    <li>In terminal: <strong>git checkout gh-pages</strong>. (Now git branch will show both branches.)</li>
+                    <li>To start working -- in Terminal: <strong>git checkout master</strong>.</li>
+                  </ol>
+                </p>
+                <h4>After working, to add changes and update gh-pages:</h4>
+                  <ol>
+                    <li>In terminal, check status, see what's changed: <strong>git status</strong>.</li>
+                    <li>Add changes: <strong>git add</strong> (followed by files that have changed or added, one git add command for each)</li>
+                    <li>Commit changes: <strong>git commit -m"Message describing this set of changes"</strong></li>
+                    <li>Push changes to master branch online: <strong>git push</strong>.</li>
+                    <li>Change to gh-pages branch: <strong>git checkout gh-pages</strong>.</li>
+                    <li>Merge content from master branch: <strong>git merge master</strong>.</li>
+                    <li>Update online version of gh-pages: <strong>git push</strong>.</li>
+                  </ol>
+            </div>
+            <footer class="articleFooter">Stephanie Argy, April 5, 2015.</footer>
+          </article>
+
         </section>
       </main>
 
