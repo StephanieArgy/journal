@@ -289,7 +289,8 @@ text color -
 hover color - #e60015
 visited color -
 background color - main header/footer - #400003
-background color - article header - #d5e5d3
+background-color - main background - #
+background color - article header - #D80018
 accent color -
 warning color -
 error color -  */
@@ -303,7 +304,7 @@ body {
 }
 
 header {
-  background-color: #400003;
+  background-color: #004020;
   color:white;
   padding:1% 4%;
   overflow:auto;
@@ -350,14 +351,20 @@ header h1 {
 
 main {
   clear:both;
-  background:#0d0b0c;
+  background:#301830;
 }
 
 .articleLinks {
   background-color:#ffe8b2;
-  border: orange double;
-  color:black;
+  border: double #D86018;
+  color:#D86018;
   margin:2%;
+}
+
+.articleLinks h2 {
+  font-variant: small-caps;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .articleLinks ul {
@@ -387,7 +394,7 @@ img#logo {
 }
 
 .mainFooter{
-  background:#400003;
+  background: #004020;
   clear:both;
   color:white;
   padding:2%;
@@ -407,8 +414,8 @@ PAGE: Journal
 }
 
 .articleHeader {
-  background-color:#d5e5d3;
-  color: #444;
+  background-color:#D80018;
+  color: #FFC141;
   min-height:0;
 }
 
@@ -495,6 +502,11 @@ blockquote {
   padding: 2%;
   border: 2px solid darkgrey;
   border-radius: 3%;
+}
+
+#theDessert {
+  margin: 15px auto;
+  width: 90%;
 }
 
 /****************
