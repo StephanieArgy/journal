@@ -525,6 +525,7 @@ PAGE: Glossary
   background-color:#d5e5d3;
   color: #444;
   min-height:0;
+  padding-left: 3%;
 }
 
   dt {
@@ -536,6 +537,28 @@ PAGE: Glossary
 
   dd {
     margin-bottom: 3%;
+    padding-left: 3%;
+
+    }
+
+    #wordInput {
+      margin-left: 3%;
+    }
+
+    legend {
+      margin-top: 3%;
+      margin-left: 3%;
+
+    }
+    textarea {
+      height: 5em;
+      width: 40em;
+      margin-left: 3%;
+    }
+
+    #addButton {
+      background-color: orange;
+      margin-left: 3%;
     }
 
 /**********
