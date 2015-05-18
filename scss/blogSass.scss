@@ -1,0 +1,152 @@
+@import "_reset.scss";
+
+//Mary Cassatt Color Palette
+$bodyBackgroundColor: #bdd7ac;
+$bodyTextColor: #5e1b0f;
+$headerFooterBGColor: #484510/2;
+$headerFooterTextColor: #484519*3;
+$navBackgroundColor: #8b3c1e;
+$navBorderColor: #5e1b0f;
+$journalEntryBackground: #5e1b0f;
+$journalEntryText: #dcefc8;
+
+@mixin roundedCorners($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin imageResize() {
+  display: block;
+  max-width: 100%;
+  width:400px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+body {
+  background-color: $bodyBackgroundColor;
+  color: $bodyTextColor;
+  font-family: Helvetica;
+  line-height: 1.2em;
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.4em;
+      padding: 10px 0;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+    a {
+      color: $journalEntryBackground * 10;
+}
+
+.mainHeader {
+  background-color: $headerFooterBGColor;
+  color: $headerFooterTextColor;
+  padding:3% 4%;
+  overflow:auto;
+  h1 {
+    float: left;
+    font-size: 5vw;
+    padding: 0;
+    text-align: center;
+    }
+  .mainMenu {
+    list-style:none;
+    float: right;
+    font-variant: small-caps;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    text-align:right;
+    font-weight: 800;
+	  padding: 0px 10px;
+    .mainMenuIcon {
+      max-width: 35px;
+    }
+  }
+}
+
+
+nav {
+  background-color: $navBackgroundColor;
+  border: double $navBorderColor;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5px;
+  padding: 5%;
+
+  ul {
+
+  }
+
+  li{
+
+  }
+
+  a {
+
+  }
+
+}
+
+.articleLinks {
+  @media (min-width: 800px) {
+  float: left;
+  width:20%;
+  max-width:360px;
+}
+}
+
+img#logo {
+  display: none;
+  @media (min-width: 800px) {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+}
+
+.journal {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5px;
+  @media (min-width: 800px) {
+      margin-left: 34%;
+  }
+}
+
+.journalEntry {
+  @include roundedCorners(15px);
+  background-color: $journalEntryBackground;
+  border: 3px solid black;
+  color: $journalEntryText;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5%;
+    }
+}
+
+#logo, #gitMentalImage, #boxesNoFloat, #HTMLforFloat, #CSSwFloat, #CSS_wFloat_Result, #CSS_wFloatAndOverflow, #CSS_wFloatAndOverflow_Result {
+  @include imageResize();
+}
+
+#theDessert {
+  margin: 15px auto;
+  width: 90%;
+}
+
+.mainFooter {
+  background-color: $headerFooterBGColor;
+  color: $headerFooterTextColor;
+  padding: 10px;
+}
