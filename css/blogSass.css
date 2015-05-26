@@ -134,7 +134,24 @@ body {
   margin: 15px auto;
   width: 90%; }
 
+.glossary {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5px; }
+  @media (min-width: 800px) {
+    .glossary {
+      margin-left: 36%; } }
+
+dt {
+  font-weight: bold;
+  margin-top: 5px; }
+
+dd {
+  margin-bottom: 15px;
+  margin-top: 5px; }
+
 .mainFooter {
   background-color: #242308;
+  clear: both;
   color: #d8cf4b;
   padding: 10px; }

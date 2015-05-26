@@ -145,8 +145,30 @@ img#logo {
   width: 90%;
 }
 
+//glossary
+
+.glossary {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5px;
+  @media (min-width: 800px) {
+      margin-left: 36s%;
+  }
+}
+
+dt {
+  font-weight:bold;
+  margin-top: 5px;
+}
+
+dd {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
 .mainFooter {
   background-color: $headerFooterBGColor;
+  clear: both;
   color: $headerFooterTextColor;
   padding: 10px;
 }
