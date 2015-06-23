@@ -21,7 +21,8 @@
 
         <!-- Add your site or application content here -->
       <header class="mainHeader">
-          <h1>My Web Foundations Journal</h1>
+          <h1>A Journal of Methods and Experiments</h1>
+
           <ul class="mainMenu">
             <li><a href="mailto:steph@mentalslapstick.com"><img src="img/email.png" class="mainMenuIcon">Email</a></li>
             <li><img src="img/brainstorm.png"  class="mainMenuIcon">Portfolio</li>
@@ -31,33 +32,24 @@
 
       <main>
         <nav class="articleLinks">
-          <h2>Primer Basic</h2>
+          <h2>
+            This is a journal that I started when I was a student in the <a href="http://www.portlandcodeschool.com/webdevelopmentprimer/" title="Portland Code School Web Foundations Course" target="_blank">Web Developments Foundations series</a> at Portland Code School. I've since trimmed it down to hands-on, practical information, in three main areas:
+            <ol>
+              <li>Workflows, explanations references that I made to help myself during that series of courses at PCS.</li>
+              <li>Information on subjects I've seen other students have questions about.</li>
+              <li>Reports on my own ongoing coding experiments, and resources I've used for those.</li>
+            </ol>
+          </h2>
           <ul>
-            <li><a href="#firstSaturday">FIRST WEEK</a></li>
-          </ul>
-          <ul>
-            <li><a href="#secondMonday">SECOND WEEK</a></li>
-            <li><a href="#secondWednesday">SECOND WEEK (Part Two)</a></li>
-          </ul>
-          <ul>
-            <li><a href="#thirdMonday">THIRD WEEK</a></li>
-          </ul>
-            <h2>Primer Pro</h2>
-          <ul>
-            <li><a href="#fifthMonday">FIFTH WEEK</a></li>
-          </ul>
-          <ul>
-            <li><a href="#seventhWednesday">SEVENTH WEEK</a></li>
-          </ul>
-            <h2>Advanced Front End Dev Tools</h2>
-            <ul>
-              <li><a href="#ninthWeek">NINTH WEEK</a></li>
-            </ul>
-            <ul>
-              <li><a href="#tenthWeek">TENTH WEEK</a></li>
-            </ul>
-          <ul>
-          <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="#learning">Learning Techniques</a></li>
+            <li><a href="#tools">Basic Tools</a></li>
+            <li><a href="#gitAndGithub">Git and Github</a></li>
+            <li><a href="#cssFloatAndOverflow">CSS Float and Overflow</a></li>
+            <li><a href="#javaScriptAndjQuery">JavaScript & jQuery</a></li>
+            <li><a href="#bootstrap">Bootstrap</a></li>
+            <li><a href="#lightbox">Building a simple Lightbox</a></li>
+            <li><a href="#oddsAndEnds">Odds and Ends</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
           </ul>
           <img src="img/temp-logo.jpg" id="logo">
         </nav>
@@ -65,77 +57,136 @@
         <section class="journal">
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="firstSaturday">Primer Basic: First Week</span></h2>
-              <h3>Saturday, March 7, 2015: Kickoff</h3>
+              <h2><span class="weekNumber" id="learning">Learning Techniques</span></h2>
           </header>
             <div class="articleText">
-              <p>First class, six hours long! Learning to learn (including a take-home article called <a href="http://www.opencolleges.edu.au/informed/features/25-things-skilled-learners-do-differently/" title="25 Things Skilled Learners Do Differently" target="blank">25 Things Skilled Learners Do Differently</a>). Meeting each other: My "handshake buddy" is Jay, my "high-five buddy" is Caleb. (Both MUCH, MUCH taller than me.)</p>
-              <p>
-                Tools that we're going to use in this class:
-                <ul>
-                  <li>Slack</li>
-                  <li>Chrome (and its development tools)</li>
-                  <li>Codepen.io</li>
-                  <li>Github.com</li>
-                  <li>Atom (I find it much friendlier than Sublime, which we were originally going to use!)</li>
-                  <li>Terminal/Gitbash</li>
-                </ul>
+              <p>In the Web Foundations Primer Basic class at PCS, one of the first things we addressed was how to learn, including reading this very helpful article:</p>
+              <p><a href="http://www.opencolleges.edu.au/informed/features/25-things-skilled-learners-do-differently/" title="25 Things Skilled Learners Do Differently" target="blank">25 Things Skilled Learners Do Differently</a>.
               </p>
               <p>
                 Pomodoro Technique. Take notes <strong>by hand</strong>! Make a glossary (and flashcards) of vocabulary, draw pictures. How a website works -- HTML, CSS, Javascript and what they do.
               </p>
-              <p>
-                After lunch: Github - oh! Command line - scary! Could kill computer with a single keystroke, and that would be sad. Launch our new friend Atom with this command-line command: <span class="computerCommand">atom .</span>
-              </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, March 11, 2015.</footer>
+            <footer class="articleFooter"></footer>
           </article>
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="secondMonday">Primer Basic: Second Week</span></h2>
-              <h3>Monday, March 9, 2015: Github Hell</h3>
-            </header>
+              <h2><span class="weekNumber" id="tools">Basic Tools</span></h2>
+          </header>
             <div class="articleText">
-              <p>
-                <img src="img/GitMentalImage.jpg" id="gitMentalImage">Second meeting...we walk in, innocently expecting a nice class about HTML and CSS and friendly website-building tools, and instead, we're confronted with three solid hours of Git!  Aughh!</p>
-              <p>
-                And yet...despite a few snafus (like my getting ahead of myself and accidently turning my entire Documents folder into a repository by typing <strong>git init</strong> before I should), the evening goes well.  I feel as though I'm making small tenuous steps, but they all seem to be in a forward direction, so that's good.
+                <p>
+                In each segment of the Web Foundations course, we used a different set of tools and languages. In Primer Basic we used:
+                <ul>
+                  <li><a href="https://slack.com/" title="Slack" target="_blank">Slack</a> - For communicating with our classmates</li>
+                  <li><a href="https://www.google.com/chrome/browser/desktop/" title="Chrome download" target="_blank">Chrome</a> - The web browser of choice for our class, mainly because of its development tools</li>
+                  <li><a href="http://codepen.io/" title="Codepen.io">Codepen.io</a> - A digital playpen for trying out code</li>
+                  <li><a href="https://git-scm.com/" title="Git">Git</a> - A version tracking system, which manages and stores all the revisions to a project.</li>
+                  <li><a href="https://github.com/" title="Github">Github.com</a> - A service that hosts Git repositories online and also provides collaborative tools for code sharing and publication.</li>
+                  <li>A text editor.  PCS recommended <a href="http://www.sublimetext.com/" title="Sublime">Sublime</a>, or we could try the open-source <a href="https://atom.io/" title="Atom">Atom</a>, if we wanted to experiment with something new.  (I chose Atom.)</li>
+                  <li>Command line tools in Terminal. (All our Git and Github work on our local drives was done in the command-line -- which was terrifying initially, but gradually became more familiar.)</li>
+                </ul>
               </p>
               <p>
-                The most important workflow, at least for now, seems to be this:
+                In Primer Pro, we used all of the above, and added:
+                <ul>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="Mozilla Development Network info on JavaScript">JavaScript</a> - The scripting language for Web pages</li>
+                  <li><a href="http://jquery.com/" title="jQuery">jQuery</a> - A Javascript library that makes it much easier to use JavaScript on a website by creating "methods" for common tasks, so that those tasks can be used a single line of code that calls that method.</li>
               </p>
               <p>
-                (Once we have our repositiory set up, on the local drive and remotely:)
-                <ol>
-                  <li><span class="computerCommand">git status</span> - To see what files have to be updated.</li>
-                  <li>If there are some, then <span class="computerCommand">git add</span> to put them into the staging area.</li>
-                  <li><span class="computerCommand">git commit the-file-we're-committing -m"Reason why we're doing the commit"</span> to commit the changes and update the repository.</li>
-                  <li><span class="computerCommand">git merge</span></li>
-                  <li>Then...to put the files on github, <span class="computerCommand">git push</span></li>.
-                </ol>
-              </p>
-              <p>
-                However...I will say that I'm not confident with the order of things, and I'm shaky on the way to specify who merges with whom, and whether I merge locally, or on the remote repository, or both.
+                And in the third section, Advanced Web Dev Tools, we used:
+                <ul>
+                  <li><a href"http://sass-lang.com/" title="Sass" target="_blank">Sass</a> - A CSS pre-processor that makes it possible to create more readable style sheets with variables, reusable blocks of style patterns and other features, all which are then translated into CSS. </li>
+                  <li><a href="https://nodejs.org/" title="node.js" target="_blank">Node.js</a> -- A platform of JavaScript based tools that can be used to write scalable network-based applications, in addition to JavaScript's more traditional browser-based uses.</li>
+                  <li><a href="https://www.npmjs.com/" title="npm" target="_blank">npm</a> - Installed along with node-js, npm is a package manager, which provides access to and manages over 125,000 pre-processors, scaffoldings and other packages, including three we used in this class: node-sass, Yeoman and Grunt.</li>
+                  <li><a href="http://yeoman.io/" title="Yeoman" target="_blank">Yeoman</a> - An architecture and workflow used to build modern web apps, with three main tools: yo (for scaffolding an app), build (for building, previewing and testing an app) and the package manager (such as npm or Bower).</li>
+                  <li><a href="http://gruntjs.com/" title="Grunt" target="_blank">Grunt</a> - A "task runner," used to automate certain repetitive tasks during the app-building process, including compilation, linting, unit testing, etc.</li>
+                  <li><a href="http://www.w3schools.com/json/" title="JSON" target="_blank">JSON</a> - "JavaScript Object Notation." A syntax for the exchange of data between a webpage and a server. Easier to use than XML.</li>
+                  <li><a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp" title="Selenium" target="_blank">Selenium</a> - A tool that installs as a plug-in on Firefox and lets developers create test cases to examine how user-interface elements are working on web applications.</li>
+                  <li><a href="http://www.w3schools.com/ajax/" title="AJAX" target="_blank">AJAX</a> - "Asynchronous JavaScript and XML." A way to use existing standards to exchange information with a server and update parts of a webpage without having to reload the entire thing.</li>
+                </ul>
               </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, March 12, 2015.</footer>
+            <footer class="articleFooter"></footer>
           </article>
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="secondWednesday">Primer Basic: Second Week (Part Two)</span> </h2>
-              <h3>Wednesday, March 16, 2015: Floats and Classes</h3>
+              <h2><span class="weekNumber" id="gitAndGithub">Git and Github</span></h2>
             </header>
             <div class="articleText">
-              <h4>Float and Overflow</h4>
               <p>
-                <img src="img/HTMLforFloatDemo.jpg" id="HTMLforFloat">As we do our Agile review at the start of class, it seems as though most people have concerns about floating. Fortunately that's what we spend more of our class time working on, and it becomes clearer.</p>
+                One of the first topics in Primer Basic was the use of Git and Github -- Git for tracking iterations of a project in "repositories", Github for storing a copy of our repositories online.
+                <img src="img/GitMentalImage.jpg" id="gitMentalImage"></p>
+              <p>In Primer Pro, our first JavaScript/jQuery assignment started with our having to make a repository and establish a remote on github.com.  "This should be review," said the instructions.</p>
+              <p>
+                So here's my review -- a knucklehead cheatsheet that I made for myself (and kept returning to regularly):</p>
+                <h4>To Create a New Project:</h4>
+                <p>
+                  <ol>
+                    <li>On GitHub, make a new repository.</li>
+                    <li>In Terminal, navigate to the directory that will contain the local directory for that respository.</li>
+                    <li>In that directory: <code>git clone https://github.com/MyGitHubName/repositoryname.git</code>.</li>
+                    <li>In Terminal, go into newly created local repo clone using <code>cd</code>.</li>
+                    <li>Back on GitHub, create a new branch called gh-pages.</li>
+                    <li>In Terminal (and in the new directory): <code>git fetch origin gh-pages</code>.  (At this point, only master branch will be visible with git branch.)</li>
+                    <li>In terminal: <code>git checkout gh-pages</code>. (Now git branch will show both branches.)</li>
+                    <li>To start working -- in Terminal: <code>git checkout master</code>.</li>
+                  </ol>
+                </p>
+                <p>
+                <h4>After working, to add changes and update gh-pages:</h4>
+                  <ol>
+                    <li>In terminal, check status, see what's changed: <code>git status</code>.</li>
+                    <li>Add changes: <code>git add</code> (followed by files that have changed or added, one git add command for each). This puts the files into the staging area, so that they can be committed.</li>
+                    <li>Commit changes: <code>git commit -m"Message describing this set of changes"</code></li>
+                    <li>Push changes to master branch online: <code>git push</code>.</li>
+                    <li>Change to gh-pages branch: <code>git checkout gh-pages</code>.</li>
+                    <li>Merge content from master branch: <code>git merge master</code>.</li>
+                    <li>Update online version of gh-pages: <code>git push</code>.</li>
+                  </ol>
+                </p>
+
+                <p>
+                Also, in Primer Basic, we did our group project, and the assignment description included this swell little cheatsheet on using Github with a team. If this were on paper, it would be all tattered and dog-eared from having been used so much. In our repository, we had a master branch and a gh-pages branch, and each of also had our own personal branch on our local drive, where we would do our individual work. Then, to put it all together:
+
+                <blockquote>
+
+                <h3>Workflow</h3>
+
+                  <p>Do your work on your branch. When you are ready to share your work with the team, do the following steps:</p>
+
+                    <ul>
+                      <li>switch to the master branch ("git checkout master")</li>
+                      <li>pull from github to bring in your team's work ("git pull")</li>
+                      <li>switch to your branch ("git checkout mybranch")</li>
+                      <li>merge from master to your branch ("git merge master")</li>
+                      <li>resolve any merge conflicts that may happen using your editor</li>
+                      <li>switch to the master branch ("git checkout master")</li>
+                      <li>merge from your branch to master ("git merge mybranch")</li>
+                      <li>push your changes to github ("git push")</li>
+                    </ul>
+                </blockquote>
+
+    <p>
+      Best. Thing. Ever.
+    </p>
+            </div>
+
+          </article>
+
+          <article class="journalEntry">
+            <header class="articleHeader">
+              <h2><span class="weekNumber" id="cssFloatAndOverflow">CSS: Float and OverFlow</span> </h2>
+            </header>
+            <div class="articleText">
+              <p>
+                <img src="img/HTMLforFloatDemo.jpg" id="HTMLforFloat">At the start of each Primer Basic class, we would we do an Agile review, to see what everyone was working on, and where our blocks were. In my class, it seemed as though most people had difficulties with the concept of floating.  This is a demo that we worked through all together:</p>
               <p>
                 Using the ever-handy CodePen, we build some boxes: a red one, a green one and a blue one.  When they're first popped in to the HTML, with just enough CSS to give them color and dimension, they look like this: </p>
               <img src="img/CSS_NoFloat_Result.jpg" id="boxesNoFloat">
               <p>
-                Next...we give our red box the CSS rule <span class="computerCommand">float: left;</span>.
+                Next...we give our red box the CSS rule <code>float: left;</code>.
                 Instant trouble! Our red box disappears! This is because while it has floated left, it has been removed from the normal page flow. The green and the blue box no longer even realize that it exists, so they scoot merrily up to the top of the page, covering up their red colleague.  Bad. So...all of the boxes must have <span class="computerCommand">float: left;</span> applied to them, like so:
               </p>
               <img src="img/CSS_wfFloat.jpg" id="CSSwFloat">
@@ -144,116 +195,22 @@
               </p>
               <img src="img/CSS_wfFloat_Result.jpg" id="CSS_wFloat_Result">
               <p>
-                The solution is to put one more rule into the CSS for the containing box: <span class="computerCommand">overflow: auto;</span>. The resulting code looks like this:
+                The solution is to put one more rule into the CSS for the containing box: <code>overflow: auto;</code>. The resulting code looks like this:
               </p>
               <img src="img/CSS_wfFloatAndOverflow.jpg" id="CSS_wFloatAndOverflow">
               <p>
                 And the result is:
               </p>
               <img src="img/CSS_wFloatAndOverflow_Result.jpg" id="CSS_wFloatAndOverflow_Result">
-              <h4>Class Naming Conventions</h4>
-              <p>
-                One of aspects of web development that has me confused is how to name classes, so that they're semantically meaningful, and don't lead to additional confusion. We talk a little bit about it in class, but afterward, I go looking to see what resources I could find online.  Here are some:
-                <ul>
-                  <li><a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">Thoughts on HTML class naming conventions</a> (Nicolas Gallagher)</li>
-                  <li><a href="http://brettjankord.com/2013/03/06/more-thoughts-on-html-class-naming-conventions/">More thoughts on HTML class naming conventions.</a></li> (This is Brett Jankord's response to the above.)
-                </ul>
-              </p>
-              <p>
-                It's now clear that things are even more complicated than I'd realized. I've stumbled into a religious war -- how do you capitalize? How do you semantically structure the class names?  I'm just looking for easy answers!  Are there none...?
-              </p>
-              <p>
-                More research is definitely required...but for now, I'm going to try my old file-naming trick of going from general to specific. And I'm going to use camel case (with the first letter lower case).  I suspect this will evolve, but at least I have a starting point.
-              </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, March 16, 2015.</footer>
           </article>
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="thirdMonday">Primer Basic: Third Week</span></h2>
-              <h3>Monday, March 16 and Wednesday, March 18, 2015: That Was the Week that Wasn't?</h3>
-            </header>
-            <div class="articleText">
-
-              <p>
-                So, whoa...I got confused! I didn't know that Saturday counted as a whole week, so what I thought was Week One of the course (Saturday, Monday, Wednesday) actually turned out to be Week One (Saturday) and Week Two (Monday and Wednesday). And here I thought we were running so far ahead of schedule...
-              </p>
-              <p>
-                But calendar challenges aside, things are going well.  I lucked into a great team for the massage website project, and thanks to working with Elizabeth and Katie, my fears of GitHub are greatly reduced. Also, there was this swell little cheatsheet, which if it were on paper would now be all tattered and dog-eared from being used so much:
-                <blockquote>
-
-                <h3>Workflow</h3>
-
-                  <p>Do your work on your branch. When you are ready to share your work with the team, do the following steps:</p>
-
-    <ul>
-      <li>switch to the master branch ("git checkout master")</li>
-      <li>pull from github to bring in your team's work ("git pull")</li>
-      <li>switch to your branch ("git checkout mybranch")</li>
-      <li>merge from master to your branch ("git merge master")</li>
-      <li>resolve any merge conflicts that may happen using your editor</li>
-      <li>switch to the master branch ("git checkout master")</li>
-      <li>merge from your branch to master ("git merge mybranch")</li>
-      <li>push your changes to github ("git push")</li>
-    </ul>
-    </blockquote>
-
-    <p>
-      Best. Thing. Ever.
-    </p>
-    <p>
-      Also...in my various experiments I came across a few other bits and pieces that I thought might be useful at some point (even though I didn't end up using them yet...):
-        <ul>
-          <li><a href="http://markdotto.com/playground/3d-text/" target="blank">A recipe for 3D Text, using the text-shadow property.</a>
-          </li>
-          <li>
-          <a href="https://css-tricks.com/viewport-sized-typography/" target="blank">Information on the "vw" typography unit for fonts scaled to the size of the viewport.</a>
-          </li>
-        </ul>
-        And I discovered that when using the <span class="computerCommand">position:relative</span> CSS rule, elements are stacked on top of one another, so it may be necessary to assign z-index values to the elements, to make sure that the right one ends up on top.
-    </p>
-    <p>
-      Next stop: JavaScript...
-    </p>
-            </div>
-            <footer class="articleFooter">Stephanie Argy, March 24, 2015.</footer>
-          </article>
-
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="fifthMonday">Primer Pro: Fifth Week</span></h2>
-              <h3>Saturday, March 7, 2015: Start of Primer Pro</h3>
+              <h2><span class="weekNumber" id="javaScriptAndjQuery">JavaScript and jQuery</span></h2>
           </header>
             <div class="articleText">
-              <p>Our first JavaScript/jQuery assignment starts with our having to make a repository and establish a remote on github.com.  "This should be review," say the instructions.</p>
-              <p>
-                So here's my review -- a knucklehead cheatsheet:</p>
-                <h4>To Create a New Project:</h4>
-                <p>
-                  <ol>
-                    <li>On GitHub, make a new repository.</li>
-                    <li>In Terminal, navigate to the directory that will contain the local directory for that respository.</li>
-                    <li>In that directory: <strong>git clone https://github.com/MyGitHubName/repositoryname.git</strong>.</li>
-                    <li>In Terminal, go into newly created local repo clone using <strong>cd</strong>.</li>
-                    <li>Back on GitHub, create a new branch called gh-pages.</li>
-                    <li>In Terminal (and in the new directory): <strong>git fetch origin gh-pages</strong>.  (At this point, only master branch will be visible with git branch.)</li>
-                    <li>In terminal: <strong>git checkout gh-pages</strong>. (Now git branch will show both branches.)</li>
-                    <li>To start working -- in Terminal: <strong>git checkout master</strong>.</li>
-                  </ol>
-                </p>
-                <p>
-                <h4>After working, to add changes and update gh-pages:</h4>
-                  <ol>
-                    <li>In terminal, check status, see what's changed: <strong>git status</strong>.</li>
-                    <li>Add changes: <strong>git add</strong> (followed by files that have changed or added, one git add command for each)</li>
-                    <li>Commit changes: <strong>git commit -m"Message describing this set of changes"</strong></li>
-                    <li>Push changes to master branch online: <strong>git push</strong>.</li>
-                    <li>Change to gh-pages branch: <strong>git checkout gh-pages</strong>.</li>
-                    <li>Merge content from master branch: <strong>git merge master</strong>.</li>
-                    <li>Update online version of gh-pages: <strong>git push</strong>.</li>
-                  </ol>
-                </p>
+
                 <p>
                   And as long as I'm scribbling down helpful tidbits, here are some resources for JavaScript:
                   <ul>
@@ -264,76 +221,61 @@
                   </ul>
                 </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, April 5, 2015.</footer>
           </article>
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="seventhWednesday">Primer Pro: Seventh Week</span></h2>
-              <h3>Bootstrap</h3>
+              <h2><span class="weekNumber" id="bootstrap">Bootstrap</span></h2>
           </header>
             <div class="articleText">
               <p>
-                I may have to rethink my system of naming articles by week and day, because clearly there's been a breakdown...
+                Super little intro to how to set up a Bootstrap project:
+                <a href="http://www.w3schools.com/bootstrap/bootstrap_get_started.asp" target="blank">http://www.w3schools.com/bootstrap/bootstrap_get_started.asp</a>
               </p>
               <p>
-                And, speaking of breakdowns -- JavaScript, jQuery and I had some big troubles this last week.  Part of it was bad timing: a jam-packed, non-stop weekend coinciding with the most complex subject matter so far.  I  needed more time to figure out some of the basic concepts of JavaScript and jQuery, and that didn't happen.  As a result, I felt stranded in the land of Cargo Cult, flapping my arms in the direction of the code, with little understanding of what anything meant. When my partner Sharon and I got together, I was frustrated by how little of substance I could contribute to our assignment.
-              </p>
-              <p>
-                I know that part of the challenge of programming is figuring out how to do things that we don't yet know how to do, but I didn't feel as though I had the foundational knowledge to truly figure things out yet. It may be the nature of the course, because it has to move so quickly to fit in all the subject matter in such a short period of time -- or maybe it was just me.
-              </p>
-              <p>
-                We were also hamstrung by weird, glitchy things that kept happening, like not knowing that we couldn't start directories with an underscore in Github. And, as so often can be the case, those glitches were contagious, so easy things that should have taken five minutes (like making a two-column layout for larger screens) just didn't work.  Why?  I still don't know.
-              </p>
-              <p>
-                But...I'm not giving up hope!  I did set aside JavaScript and jQuery since Monday's class, so that I could focus on understanding the basics of Bootstrap before our next assignment.  This weekend, though, is as free as last one's was frenetic, so JavaScript and jQuery and I will be spending some substantial time together and trying to reach an understanding.
+                A guide to making a photo gallery in Bootstrap:
+                <a href="http://fearlessflyer.com/create-a-responsive-photo-gallery-with-bootstrap-framework/" target="blank">http://fearlessflyer.com/create-a-responsive-photo-gallery-with-bootstrap-framework/</a>
               </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, April 15, 2015.</footer>
           </article>
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="ninthWeek">Advanced Dev Tools: Ninth Week</span></h2>
-              <h3>Advanced!</h3>
+              <h2><span class="weekNumber" id="lightbox">Making a Lightbox</span></h2>
           </header>
             <div class="articleText">
               <p>
-                Start of the third phase!
-              </p>
-              <p>
-                There's been an interesting progression in these classes. In Primer Basic, I had a decent level of experience with most everything we were learning; the nuances and overall structure were elusive, but I'd done enough HTML and CSS to feel as though the process was one of refinement. (Github was the major exception.)  In Primer Pro, I had no real hands-on experience with the subject matter, but I had a basic familiarity with it: JavaScript, jQuery, okay...kind of... (I hadn't encountered Bootstrap and didn't know what it was, but it was less complicated than some of the other things.)
-              </p>
-              <p>
-                But in this third phase, everything on the syllabus is totally new -- which is exciting, in part because I feel the previous phases of the course have made me more ready to handle that.  Also, I'm glad for the chance to get more practice with some of the things that were harder in Primer Pro, like JavaScript and jQuery.
-              </p>
-              <p>
-                In honor of the start of Advanced Front End Dev Tools, I tidied up this blog a little, and also gave it a slightly revised color palette, based on this spiffy painting -- <cite>The Dessert: Harmony in Red</cite>, by Matisse (1908):
-                <img src="img/TheDessert.jpg" id="theDessert">
+                I pulled this info specifically for <a href="http://www.alecboehm.com">www.alecboehm.com</a>, which I built in Bootstrap:
+                <ul>
+                  <li>Bootstrap Lightbox<br>
+                    <a href="http://www.jasonbutz.info/bootstrap-lightbox/#home">http://www.jasonbutz.info/bootstrap-lightbox/#home</a></li>
+                  <li>HTML5Lightbox<br>
+                    <a href="https://html5box.com/html5lightbox/index.php">https://html5box.com/html5lightbox/index.php</a></li>
+                </ul>
+              http://www.jasonbutz.info/bootstrap-lightbox/#home
               </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, May 6, 2015.</footer>
           </article>
 
           <article class="journalEntry">
             <header class="articleHeader">
-              <h2><span class="weekNumber" id="tenthWeek">Advanced Dev Tools: Tenth Week</span></h2>
-              <h3>Command Line Web Development</h3>
-          </header>
-            <div class="articleText">
-              <p>
-                What have we done in this phase of the course so far?
-                <ol>
-                  <li>Return to Bootstrap for Kitten site</li>
-                  <li>Creating a list from JSON (glossary, then kitten site)</li>
-                  <li>Recreation of blog styles, using Sass (specifically, node-sass)</li>
-                  <li>Toolchain: Yeoman(yo), Bower, Grunt</li>
-                  <li>AJAX: to reload only a portion of a site page.</li>
-                </ol>
-              </p>
+              <h2><span id="oddsAndEnds">Odds and Ends</span></h2>
+              <div class="articleText">
+                <p>
+                  In my various experiments I've come across a few other bits and pieces that I thought might be useful at some point. This is my little collection, for future reference:
+                    <ul>
+                      <li><a href="http://markdotto.com/playground/3d-text/" target="blank">A recipe for 3D Text, using the text-shadow property, like this:</a>
+                        <p id="shadowTest">3D Text Test</p>
+                      </li>
+                      <li>
+                      <a href="https://css-tricks.com/viewport-sized-typography/" target="blank">Information on the "vw" typography unit for fonts scaled to the size of the viewport.</a>
+                      </li>
+                      <li>I discovered that when using the <code>position:relative</code> CSS rule, elements are stacked on top of one another, so it may be necessary to assign z-index values to the elements, to make sure that the right one ends up on top.</li>
+                    </ul>
+                </p>
             </div>
-            <footer class="articleFooter">Stephanie Argy, May 14, 2015.</footer>
           </article>
+
 
         </section>
       </main>

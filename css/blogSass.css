@@ -46,49 +46,73 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #bdd7ac;
-  color: #5e1b0f;
+  background-color: #003300;
+  color: purple;
   font-family: Helvetica;
   line-height: 1.2em; }
   body h1 {
     font-size: 2em; }
   body h2 {
+    color: OrangeRed;
     font-size: 1.4em;
     padding: 10px 0; }
+  body h3 {
+    font-weight: bold;
+    margin-bottom: 1.3em; }
   body p {
     padding-bottom: 20px; }
   body a {
-    color: #ffff96; }
+    color: SaddleBrown; }
+  body code {
+    color: maroon;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold; }
   body .mainHeader {
     background-color: #242308;
-    color: #d8cf4b;
-    padding: 3% 4%;
-    overflow: auto; }
+    color: white;
+    overflow: auto;
+    padding: 15px; }
     body .mainHeader h1 {
-      float: left;
-      font-size: 5vw;
-      padding: 0;
-      text-align: center; }
+      font-size: 4vw;
+      text-align: center;
+      margin: 2%; }
     body .mainHeader .mainMenu {
       list-style: none;
-      float: right;
       font-variant: small-caps;
-      margin: 0;
-      padding: 0; }
+      text-align: center; }
     body .mainHeader li {
       display: inline-block;
-      text-align: right;
+      text-align: center;
       font-weight: 800;
       padding: 0px 10px; }
       body .mainHeader li .mainMenuIcon {
         max-width: 35px; }
   body nav {
-    background-color: #8b3c1e;
-    border: double #5e1b0f;
+    background-color: #444;
+    border: double OrangeRed;
     margin-left: 3%;
-    margin-right: 3%;
+    margin-right: 5%;
     margin-top: 5px;
     padding: 5%; }
+    body nav h2 {
+      color: #FFE6B2;
+      font-size: 1.2em;
+      line-height: 1.3em; }
+    body nav h3 {
+      color: #FFE6B2;
+      margin-top: 1em; }
+    body nav ol {
+      list-style: inside decimal;
+      padding: 10px; }
+    body nav li {
+      padding-bottom: 10px; }
+    body nav a {
+      color: white; }
+  body .journalEntry ul {
+    list-style: inside square; }
+  body .journalEntry ol {
+    list-style: inside decimal; }
   @media (min-width: 800px) {
     body .articleLinks {
       float: left;
@@ -114,9 +138,9 @@ body {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     border-radius: 15px;
-    background-color: #5e1b0f;
+    background-color: #efefef;
     border: 3px solid black;
-    color: #dcefc8;
+    color: #222;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5%; }
@@ -130,9 +154,11 @@ body {
   margin-right: auto;
   margin-top: 10px; }
 
-#theDessert {
-  margin: 15px auto;
-  width: 90%; }
+#shadowTest {
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
 .glossary {
   margin-left: 3%;
@@ -153,5 +179,5 @@ dd {
 .mainFooter {
   background-color: #242308;
   clear: both;
-  color: #d8cf4b;
+  color: white;
   padding: 10px; }

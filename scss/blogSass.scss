@@ -1,14 +1,17 @@
 @import "_reset.scss";
 
 //Mary Cassatt Color Palette
-$bodyBackgroundColor: #bdd7ac;
-$bodyTextColor: #5e1b0f;
+$bodyBackgroundColor: #003300;
+$bodyH2Color: OrangeRed;
+$bodyTextColor: purple;
+$bodyTextLink: SaddleBrown;
 $headerFooterBGColor: #484510/2;
-$headerFooterTextColor: #484519*3;
-$navBackgroundColor: #8b3c1e;
-$navBorderColor: #5e1b0f;
-$journalEntryBackground: #5e1b0f;
-$journalEntryText: #dcefc8;
+$headerFooterTextColor: white;
+$navBackgroundColor: #444;
+$navTextColor: #FFE6B2;
+$navBorderColor: OrangeRed;
+$journalEntryBackground: #efefef;
+$journalEntryText: #222;
 
 @mixin roundedCorners($radius) {
   -webkit-border-radius: $radius;
@@ -36,37 +39,45 @@ body {
       font-size: 2em;
     }
     h2 {
+      color: $bodyH2Color;
       font-size: 1.4em;
       padding: 10px 0;
+    }
+    h3 {
+      font-weight: bold;
+      margin-bottom: 1.3em;
     }
     p {
       padding-bottom: 20px;
     }
     a {
-      color: $journalEntryBackground * 10;
-}
+      color: $bodyTextLink;
+    }
+  code {
+    color: maroon;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
 
 .mainHeader {
   background-color: $headerFooterBGColor;
   color: $headerFooterTextColor;
-  padding:3% 4%;
   overflow:auto;
+  padding: 15px;
   h1 {
-    float: left;
-    font-size: 5vw;
-    padding: 0;
+    font-size: 4vw;
     text-align: center;
+    margin: 2%;
     }
   .mainMenu {
     list-style:none;
-    float: right;
     font-variant: small-caps;
-    margin: 0;
-    padding: 0;
+    text-align: center;
   }
   li {
     display: inline-block;
-    text-align:right;
+    text-align:center;
     font-weight: 800;
 	  padding: 0px 10px;
     .mainMenuIcon {
@@ -80,22 +91,45 @@ nav {
   background-color: $navBackgroundColor;
   border: double $navBorderColor;
   margin-left: 3%;
-  margin-right: 3%;
+  margin-right: 5%;
   margin-top: 5px;
   padding: 5%;
 
+  h2 {
+   color: $navTextColor;
+   font-size: 1.2em;
+   line-height: 1.3em;
+  }
+  h3 {
+    color: $navTextColor;
+    margin-top: 1em;
+  }
   ul {
 
   }
 
-  li{
+  ol {
+    list-style: inside decimal;
+    padding: 10px;
+  }
 
+  li{
+    padding-bottom: 10px;
   }
 
   a {
-
+    color: $navTextColor*2;
   }
 
+}
+
+.journalEntry {
+  ul {
+    list-style: inside square;
+  }
+  ol {
+    list-style: inside decimal;
+  }
 }
 
 .articleLinks {
@@ -140,9 +174,22 @@ img#logo {
   @include imageResize();
 }
 
-#theDessert {
-  margin: 15px auto;
-  width: 90%;
+#shadowTest {
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 //glossary
@@ -152,7 +199,7 @@ img#logo {
   margin-right: 3%;
   margin-top: 5px;
   @media (min-width: 800px) {
-      margin-left: 36s%;
+      margin-left: 36%;
   }
 }
 
