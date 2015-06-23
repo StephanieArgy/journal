@@ -78,9 +78,9 @@
                 <p>
                 In each segment of the Web Foundations course, we used a different set of tools and languages. In Primer Basic we used:
                 <ul>
-                  <li><a href="https://slack.com/" title="Slack" target="_blank">Slack</a> - For communicating with our classmates</li>
-                  <li><a href="https://www.google.com/chrome/browser/desktop/" title="Chrome download" target="_blank">Chrome</a> - The web browser of choice for our class, mainly because of its development tools</li>
-                  <li><a href="http://codepen.io/" title="Codepen.io">Codepen.io</a> - A digital playpen for trying out code</li>
+                  <li><a href="https://slack.com/" title="Slack" target="_blank">Slack</a> - For communicating with our classmates.</li>
+                  <li><a href="https://www.google.com/chrome/browser/desktop/" title="Chrome download" target="_blank">Chrome</a> - The web browser of choice for our class, mainly because of its development tools.</li>
+                  <li><a href="http://codepen.io/" title="Codepen.io">Codepen.io</a> - A digital playpen for trying out code.</li>
                   <li><a href="https://git-scm.com/" title="Git">Git</a> - A version tracking system, which manages and stores all the revisions to a project.</li>
                   <li><a href="https://github.com/" title="Github">Github.com</a> - A service that hosts Git repositories online and also provides collaborative tools for code sharing and publication.</li>
                   <li>A text editor.  PCS recommended <a href="http://www.sublimetext.com/" title="Sublime">Sublime</a>, or we could try the open-source <a href="https://atom.io/" title="Atom">Atom</a>, if we wanted to experiment with something new.  (I chose Atom.)</li>
@@ -92,11 +92,12 @@
                 <ul>
                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="Mozilla Development Network info on JavaScript">JavaScript</a> - The scripting language for Web pages</li>
                   <li><a href="http://jquery.com/" title="jQuery">jQuery</a> - A Javascript library that makes it much easier to use JavaScript on a website by creating "methods" for common tasks, so that those tasks can be used a single line of code that calls that method.</li>
+                  <li><a href="http://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a> - A framework for developing responsive, mobile-friendly projects on the web.</li>
               </p>
               <p>
                 And in the third section, Advanced Web Dev Tools, we used:
                 <ul>
-                  <li><a href"http://sass-lang.com/" title="Sass" target="_blank">Sass</a> - A CSS pre-processor that makes it possible to create more readable style sheets with variables, reusable blocks of style patterns and other features, all which are then translated into CSS. </li>
+                  <li><a href="http://sass-lang.com/" title="Sass" target="_blank">Sass</a> - A CSS pre-processor that makes it possible to create more readable style sheets with variables, reusable blocks of style patterns and other features, all which are then translated into CSS. </li>
                   <li><a href="https://nodejs.org/" title="node.js" target="_blank">Node.js</a> -- A platform of JavaScript based tools that can be used to write scalable network-based applications, in addition to JavaScript's more traditional browser-based uses.</li>
                   <li><a href="https://www.npmjs.com/" title="npm" target="_blank">npm</a> - Installed along with node-js, npm is a package manager, which provides access to and manages over 125,000 pre-processors, scaffoldings and other packages, including three we used in this class: node-sass, Yeoman and Grunt.</li>
                   <li><a href="http://yeoman.io/" title="Yeoman" target="_blank">Yeoman</a> - An architecture and workflow used to build modern web apps, with three main tools: yo (for scaffolding an app), build (for building, previewing and testing an app) and the package manager (such as npm or Bower).</li>
@@ -183,19 +184,19 @@
               <p>
                 <img src="img/HTMLforFloatDemo.jpg" id="HTMLforFloat">At the start of each Primer Basic class, we would we do an Agile review, to see what everyone was working on, and where our blocks were. In my class, it seemed as though most people had difficulties with the concept of floating.  This is a demo that we worked through all together:</p>
               <p>
-                Using the ever-handy CodePen, we build some boxes: a red one, a green one and a blue one.  When they're first popped in to the HTML, with just enough CSS to give them color and dimension, they look like this: </p>
+                Using the ever-handy CodePen, we built some boxes: a red one, a green one and a blue one.  When we first popped them into the HTML, with just enough CSS to give them color and dimension, they looked like this: </p>
               <img src="img/CSS_NoFloat_Result.jpg" id="boxesNoFloat">
               <p>
-                Next...we give our red box the CSS rule <code>float: left;</code>.
-                Instant trouble! Our red box disappears! This is because while it has floated left, it has been removed from the normal page flow. The green and the blue box no longer even realize that it exists, so they scoot merrily up to the top of the page, covering up their red colleague.  Bad. So...all of the boxes must have <span class="computerCommand">float: left;</span> applied to them, like so:
+                Next...we gave our red box the CSS rule <code>float: left;</code>.
+                Instant trouble! Our red box disappeared! This was because while it had floated left, it had been removed from the normal page flow. The green and the blue box no longer even realized that it existed, so they scooted merrily up to the top of the page, covering up their red colleague.  Bad. So...all of the boxes must need <span class="computerCommand">float: left;</span> applied to them, like so:
               </p>
               <img src="img/CSS_wfFloat.jpg" id="CSSwFloat">
               <p>
-                Now, we have a new problem, though, because we made an enclosing box with a border -- and it doesn't know how to handle those floats either, leaving us with an image that looks like this:
+                Now, we had a new problem, though, because we had made an enclosing box with a border -- and it no longer knew how to handle all those floats, leaving us with an image that looked like this:
               </p>
               <img src="img/CSS_wfFloat_Result.jpg" id="CSS_wFloat_Result">
               <p>
-                The solution is to put one more rule into the CSS for the containing box: <code>overflow: auto;</code>. The resulting code looks like this:
+                The solution was to put one more rule into the CSS for the containing box: <code>overflow: auto;</code>. The resulting code looks like this:
               </p>
               <img src="img/CSS_wfFloatAndOverflow.jpg" id="CSS_wFloatAndOverflow">
               <p>
@@ -212,14 +213,21 @@
             <div class="articleText">
 
                 <p>
-                  And as long as I'm scribbling down helpful tidbits, here are some resources for JavaScript:
-                  <ul>
-                    <li><a href="http://jquery.com/" target="blank">jQuery.com</a></li>
-                    <li>JavaScript documentation: <a href="http://api.jquery.com/" target="blank"> http://api.jquery.com/</a></li>
-                    <li><a href="http://blog.teamtreehouse.com/beginners-guide-to-jquery" target="blank">http://blog.teamtreehouse.com/beginners-guide-to-jquery</a></li>
-                    <li><a href="http://eloquentjavascript.net/" target="blank">Eloquent JavaScript</a></li>
-                  </ul>
-                </p>
+                  JavaScript and jQuery were initially a big hurdle for me. The biggest step foward came when I finally realized the difference between the two: JavaScript is a language, used to create behaviors on webpages.  However, it is very complicated and time-consuming to use, so libraries have been created to make it more easily (and quickly) accessible to developers.  jQuery is one of those -- a framework, built using JavaScript, that allows a developer to do common tasks with a small amount of code.</p>
+                  <p>
+                    Here are a few resources that I found helpful.  First, for JavaScript:
+                    <ul>
+                      <li><a href="http://eloquentjavascript.net/" target="blank">Eloquent JavaScript</a></li>
+                    </ul>
+                  </p>
+                  <p>
+                    And for jQuery:
+                    <ul>
+                      <li><a href="http://jquery.com/" target="blank">jQuery.com</a></li>
+                      <li>JavaScript documentation: <a href="http://api.jquery.com/" target="blank"> http://api.jquery.com/</a></li>
+                      <li><a href="http://blog.teamtreehouse.com/beginners-guide-to-jquery" target="blank">http://blog.teamtreehouse.com/beginners-guide-to-jquery</a></li>
+                    </ul>
+                  </p>
             </div>
           </article>
 
