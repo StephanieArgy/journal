@@ -11,7 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/blogSass.css">
+        <link rel="stylesheet" href="css/blogSass_ForCards.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -24,271 +24,238 @@
           <h1>A Journal of Methods and Experiments</h1>
 
           <ul class="mainMenu">
-            <li><a href="mailto:steph@mentalslapstick.com"><img src="img/email.png" class="mainMenuIcon">Email</a></li>
-            <li><img src="img/brainstorm.png"  class="mainMenuIcon">Portfolio</li>
-            <li><img src="img/gear.png"  class="mainMenuIcon"><a href="https://github.com/StephanieArgy" target="blank">My github</a></li>
+            <li id="menuButton_email"><a href="mailto:steph@mentalslapstick.com">Email</a></li>
+            <li id="menuButton_portfolio"><a href="#">Portfolio</a></li>
+            <li id="menuButton_github"><a href="https://github.com/StephanieArgy" target="blank">My github</a></li>
           </ul>
           </header>
 
       <main>
-        <nav class="articleLinks">
-          <h2>
-            This is a journal that I started when I was a student in the <a href="http://www.portlandcodeschool.com/webdevelopmentprimer/" title="Portland Code School Web Foundations Course" target="_blank">Web Developments Foundations series</a> at Portland Code School. I've since trimmed it down to hands-on, practical information, in three main areas:
-            <ol>
-              <li>Workflows, explanations references that I made to help myself during that series of courses at PCS.</li>
-              <li>Information on subjects I've seen other students have questions about.</li>
-              <li>Reports on my own ongoing coding experiments, and resources I've used for those.</li>
-            </ol>
-          </h2>
-          <ul>
-            <li><a href="#learning">Learning Techniques</a></li>
-            <li><a href="#tools">Basic Tools</a></li>
-            <li><a href="#gitAndGithub">Git and Github</a></li>
-            <li><a href="#cssFloatAndOverflow">CSS Float and Overflow</a></li>
-            <li><a href="#javaScriptAndjQuery">JavaScript & jQuery</a></li>
-            <li><a href="#bootstrap">Bootstrap</a></li>
-            <li><a href="#lightbox">Building a simple Lightbox</a></li>
-            <li><a href="#oddsAndEnds">Odds and Ends</a></li>
-            <li><a href="glossary.html">Glossary</a></li>
-          </ul>
-          <img src="img/temp-logo.jpg" id="logo">
-        </nav>
 
-        <section class="journal">
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="learning">Learning Techniques</span></h2>
-          </header>
-            <div class="articleText">
-              <p>In the Web Foundations Primer Basic class at PCS, one of the first things we addressed was how to learn, including reading this very helpful article:</p>
-              <p><a href="http://www.opencolleges.edu.au/informed/features/25-things-skilled-learners-do-differently/" title="25 Things Skilled Learners Do Differently" target="blank">25 Things Skilled Learners Do Differently</a>.
-              </p>
-              <p>
-                Pomodoro Technique. Take notes <strong>by hand</strong>! Make a glossary (and flashcards) of vocabulary, draw pictures. How a website works -- HTML, CSS, Javascript and what they do.
-              </p>
+        <p class="introText">
+          I started this site as an assignment for the three-course Web Development Foundations series at <a href="http://www.portlandcodeschool.com/" title="Portland Code School" target="_blank">Portland Code School</a>. It was originally a simple blog, chronicling my experiences in the course, but I've since redesigned it to house hands-on, practical resources that helped me the most in those three classes, and anything else that I've found especially handy.
+        </p>
+
+<!-- Begin card -->
+        <div class="module-card-wrap">
+          <div class="module-card">
+            <div class="module-card-title">HTML</div>
+
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Structure</span>
+              </div>
             </div>
-            <footer class="articleFooter"></footer>
-          </article>
 
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="tools">Basic Tools</span></h2>
-          </header>
-            <div class="articleText">
-                <p>
-                In each segment of the Web Foundations course, we used a different set of tools and languages. In Primer Basic we used:
-                <ul>
-                  <li><a href="https://slack.com/" title="Slack" target="_blank">Slack</a> - For communicating with our classmates.</li>
-                  <li><a href="https://www.google.com/chrome/browser/desktop/" title="Chrome download" target="_blank">Chrome</a> - The web browser of choice for our class, mainly because of its development tools.</li>
-                  <li><a href="http://codepen.io/" title="Codepen.io">Codepen.io</a> - A digital playpen for trying out code.</li>
-                  <li><a href="https://git-scm.com/" title="Git">Git</a> - A version tracking system, which manages and stores all the revisions to a project.</li>
-                  <li><a href="https://github.com/" title="Github">Github.com</a> - A service that hosts Git repositories online and also provides collaborative tools for code sharing and publication.</li>
-                  <li>A text editor.  PCS recommended <a href="http://www.sublimetext.com/" title="Sublime">Sublime</a>, or we could try the open-source <a href="https://atom.io/" title="Atom">Atom</a>, if we wanted to experiment with something new.  (I chose Atom.)</li>
-                  <li>Command line tools in Terminal. (All our Git and Github work on our local drives was done in the command-line -- which was terrifying initially, but gradually became more familiar.)</li>
-                </ul>
-              </p>
-              <p>
-                In Primer Pro, we used all of the above, and added:
-                <ul>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="Mozilla Development Network info on JavaScript">JavaScript</a> - The scripting language for Web pages</li>
-                  <li><a href="http://jquery.com/" title="jQuery">jQuery</a> - A Javascript library that makes it much easier to use JavaScript on a website by creating "methods" for common tasks, so that those tasks can be used a single line of code that calls that method.</li>
-                  <li><a href="http://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a> - A framework for developing responsive, mobile-friendly projects on the web.</li>
-              </p>
-              <p>
-                And in the third section, Advanced Web Dev Tools, we used:
-                <ul>
-                  <li><a href="http://sass-lang.com/" title="Sass" target="_blank">Sass</a> - A CSS pre-processor that makes it possible to create more readable style sheets with variables, reusable blocks of style patterns and other features, all which are then translated into CSS. </li>
-                  <li><a href="https://nodejs.org/" title="node.js" target="_blank">Node.js</a> -- A platform of JavaScript based tools that can be used to write scalable network-based applications, in addition to JavaScript's more traditional browser-based uses.</li>
-                  <li><a href="https://www.npmjs.com/" title="npm" target="_blank">npm</a> - Installed along with node-js, npm is a package manager, which provides access to and manages over 125,000 pre-processors, scaffoldings and other packages, including three we used in this class: node-sass, Yeoman and Grunt.</li>
-                  <li><a href="http://yeoman.io/" title="Yeoman" target="_blank">Yeoman</a> - An architecture and workflow used to build modern web apps, with three main tools: yo (for scaffolding an app), build (for building, previewing and testing an app) and the package manager (such as npm or Bower).</li>
-                  <li><a href="http://gruntjs.com/" title="Grunt" target="_blank">Grunt</a> - A "task runner," used to automate certain repetitive tasks during the app-building process, including compilation, linting, unit testing, etc.</li>
-                  <li><a href="http://www.w3schools.com/json/" title="JSON" target="_blank">JSON</a> - "JavaScript Object Notation." A syntax for the exchange of data between a webpage and a server. Easier to use than XML.</li>
-                  <li><a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp" title="Selenium" target="_blank">Selenium</a> - A tool that installs as a plug-in on Firefox and lets developers create test cases to examine how user-interface elements are working on web applications.</li>
-                  <li><a href="http://www.w3schools.com/ajax/" title="AJAX" target="_blank">AJAX</a> - "Asynchronous JavaScript and XML." A way to use existing standards to exchange information with a server and update parts of a webpage without having to reload the entire thing.</li>
-                </ul>
-              </p>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x150" alt="structure" class="module-card-img" /> -->
+
+              <div>
+                <p>Tags, meaning, semantics, classes, IDs.</p>
+              </div>
+
+              <button class="module-card-button"><a href="#">See More</a></button>
             </div>
-            <footer class="articleFooter"></footer>
-          </article>
+          </div>
+<!-- End card -->
 
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="gitAndGithub">Git and Github</span></h2>
-            </header>
-            <div class="articleText">
-              <p>
-                One of the first topics in Primer Basic was the use of Git and Github -- Git for tracking iterations of a project in "repositories", Github for storing a copy of our repositories online.
-                <img src="img/GitMentalImage.jpg" id="gitMentalImage"></p>
-              <p>In Primer Pro, our first JavaScript/jQuery assignment started with our having to make a repository and establish a remote on github.com.  "This should be review," said the instructions.</p>
-              <p>
-                So here's my review -- a knucklehead cheatsheet that I made for myself (and kept returning to regularly):</p>
-                <h4>To Create a New Project:</h4>
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">CSS</div>
+
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Style</span>
+              </div>
+            </div>
+
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x300" alt="style" class="module-card-img" /> -->
+
+              <div>
+                <p>Colors, fonts, layout.  Selectors.</p>
+              </div>
+
+              <button class="module-card-button"><a href="#">See More</a></button>
+            </div>
+          </div>
+<!-- End card -->
+
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">JavaScript and jQuery</div>
+
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Behavior and Interaction</span>
+              </div>
+            </div>
+
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x300" alt="behavior" class="module-card-img" /> -->
+
+              <div>
+                <p></p>
+              </div>
+
+              <button class="module-card-button"><a href="#">See More</a></button>
+            </div>
+          </div>
+<!-- End card -->
+
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Git and Github</div>
+
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Version Tracking</span>
+              </div>
+            </div>
+
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x300" alt="style" class="module-card-img" /> -->
+
+              <div>
+                <p></p>
+              </div>
+
+              <button class="module-card-button"><a href="#">See More</a></button>
+            </div>
+          </div>
+<!-- End card -->
+
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Responsive Design</div>
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Mobile-First and Mobile-Friendly</span>
+              </div>
+            </div>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x100" alt="responsiveDesign" class="module-card-img" /> -->
+              <div>
+                <p><a href="http://www.sitepoint.com/5-big-mobile-design-trends-of-2015/" target="_blank">5 Big Mobile Design Trends of 2015</a></p>
                 <p>
-                  <ol>
-                    <li>On GitHub, make a new repository.</li>
-                    <li>In Terminal, navigate to the directory that will contain the local directory for that respository.</li>
-                    <li>In that directory: <code>git clone https://github.com/MyGitHubName/repositoryname.git</code>.</li>
-                    <li>In Terminal, go into newly created local repo clone using <code>cd</code>.</li>
-                    <li>Back on GitHub, create a new branch called gh-pages.</li>
-                    <li>In Terminal (and in the new directory): <code>git fetch origin gh-pages</code>.  (At this point, only master branch will be visible with git branch.)</li>
-                    <li>In terminal: <code>git checkout gh-pages</code>. (Now git branch will show both branches.)</li>
-                    <li>To start working -- in Terminal: <code>git checkout master</code>.</li>
-                  </ol>
+                  <a href="https://css-tricks.com/three-line-menu-navicon/" target="_blank">How to make a hamburger</a>
                 </p>
+              </div>
+              <button class="module-card-button"><a href="#">See More</a></button>
+            </div>
+          </div>
+<!-- End card -->
+
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Card UI</div>
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Cards</span>
+              </div>
+            </div>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x200" alt="card UI" class="module-card-img" /> -->
+              <div>
+                <p><a href="http://codepen.io/imohkay/pen/PwPwWd/" target="_blank">Great Codepen demo for a simple card setup</a></p>
+                <p><a href="http://css.dzone.com/articles/implementing-card-ui-pattern" target="_blank">Implementing the Card UI</a> (and a <a href="https://github.com/triceam/cards-ui" target="_blank">Github repository</a> that goes with it).</p>
                 <p>
-                <h4>After working, to add changes and update gh-pages:</h4>
-                  <ol>
-                    <li>In terminal, check status, see what's changed: <code>git status</code>.</li>
-                    <li>Add changes: <code>git add</code> (followed by files that have changed or added, one git add command for each). This puts the files into the staging area, so that they can be committed.</li>
-                    <li>Commit changes: <code>git commit -m"Message describing this set of changes"</code></li>
-                    <li>Push changes to master branch online: <code>git push</code>.</li>
-                    <li>Change to gh-pages branch: <code>git checkout gh-pages</code>.</li>
-                    <li>Merge content from master branch: <code>git merge master</code>.</li>
-                    <li>Update online version of gh-pages: <code>git push</code>.</li>
-                  </ol>
+                  <a href="http://www.google.com/design/spec/components/cards.html#cards-content-blocks" target="_blank">Google Material Design: Components - Cards</a>
                 </p>
-
-                <p>
-                Also, in Primer Basic, we did our group project, and the assignment description included this swell little cheatsheet on using Github with a team. If this were on paper, it would be all tattered and dog-eared from having been used so much. In our repository, we had a master branch and a gh-pages branch, and each of also had our own personal branch on our local drive, where we would do our individual work. Then, to put it all together:
-
-                <blockquote>
-
-                <h3>Workflow</h3>
-
-                  <p>Do your work on your branch. When you are ready to share your work with the team, do the following steps:</p>
-
-                    <ul>
-                      <li>switch to the master branch ("git checkout master")</li>
-                      <li>pull from github to bring in your team's work ("git pull")</li>
-                      <li>switch to your branch ("git checkout mybranch")</li>
-                      <li>merge from master to your branch ("git merge master")</li>
-                      <li>resolve any merge conflicts that may happen using your editor</li>
-                      <li>switch to the master branch ("git checkout master")</li>
-                      <li>merge from your branch to master ("git merge mybranch")</li>
-                      <li>push your changes to github ("git push")</li>
-                    </ul>
-                </blockquote>
-
-    <p>
-      Best. Thing. Ever.
-    </p>
+              </div>
+              <button class="module-card-button"><a href="#">See More</a></button>
             </div>
+          </div>
+<!-- End card -->
 
-          </article>
-
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="cssFloatAndOverflow">CSS: Float and OverFlow</span> </h2>
-            </header>
-            <div class="articleText">
-              <p>
-                <img src="img/HTMLforFloatDemo.jpg" id="HTMLforFloat">At the start of each Primer Basic class, we would we do an Agile review, to see what everyone was working on, and where our blocks were. In my class, it seemed as though most people had difficulties with the concept of floating.  This is a demo that we worked through all together:</p>
-              <p>
-                Using the ever-handy CodePen, we built some boxes: a red one, a green one and a blue one.  When we first popped them into the HTML, with just enough CSS to give them color and dimension, they looked like this: </p>
-              <img src="img/CSS_NoFloat_Result.jpg" id="boxesNoFloat">
-              <p>
-                Next...we gave our red box the CSS rule <code>float: left;</code>.
-                Instant trouble! Our red box disappeared! This was because while it had floated left, it had been removed from the normal page flow. The green and the blue box no longer even realized that it existed, so they scooted merrily up to the top of the page, covering up their red colleague.  Bad. So...all of the boxes must need <span class="computerCommand">float: left;</span> applied to them, like so:
-              </p>
-              <img src="img/CSS_wfFloat.jpg" id="CSSwFloat">
-              <p>
-                Now, we had a new problem, though, because we had made an enclosing box with a border -- and it no longer knew how to handle all those floats, leaving us with an image that looked like this:
-              </p>
-              <img src="img/CSS_wfFloat_Result.jpg" id="CSS_wFloat_Result">
-              <p>
-                The solution was to put one more rule into the CSS for the containing box: <code>overflow: auto;</code>. The resulting code looks like this:
-              </p>
-              <img src="img/CSS_wfFloatAndOverflow.jpg" id="CSS_wFloatAndOverflow">
-              <p>
-                And the result is:
-              </p>
-              <img src="img/CSS_wFloatAndOverflow_Result.jpg" id="CSS_wFloatAndOverflow_Result">
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Flexbox</div>
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Modern Layout</span>
+              </div>
             </div>
-          </article>
-
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="javaScriptAndjQuery">JavaScript and jQuery</span></h2>
-          </header>
-            <div class="articleText">
-
-                <p>
-                  JavaScript and jQuery were initially a big hurdle for me. The biggest step foward came when I finally realized the difference between the two: JavaScript is a language, used to create behaviors on webpages.  However, it is very complicated and time-consuming to use, so libraries have been created to make it more easily (and quickly) accessible to developers.  jQuery is one of those -- a framework, built using JavaScript, that allows a developer to do common tasks with a small amount of code.</p>
-                  <p>
-                    Here are a few resources that I found helpful.  First, for JavaScript:
-                    <ul>
-                      <li><a href="http://eloquentjavascript.net/" target="blank">Eloquent JavaScript</a></li>
-                    </ul>
-                  </p>
-                  <p>
-                    And for jQuery:
-                    <ul>
-                      <li><a href="http://jquery.com/" target="blank">jQuery.com</a></li>
-                      <li>JavaScript documentation: <a href="http://api.jquery.com/" target="blank"> http://api.jquery.com/</a></li>
-                      <li><a href="http://blog.teamtreehouse.com/beginners-guide-to-jquery" target="blank">http://blog.teamtreehouse.com/beginners-guide-to-jquery</a></li>
-                    </ul>
-                  </p>
+            <div>
+              <p><a href="http://tympanus.net/codrops/css_reference/flexbox/" target="_blank">Overview of Flexbox</a></p>
+              <p><a href="http://www.smashingmagazine.com/2015/03/02/harnessing-flexbox-for-todays-web-apps/" target="_blank">Harnessing Flexbox for Today's Web Abbs</a></p>
             </div>
-          </article>
-
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="bootstrap">Bootstrap</span></h2>
-          </header>
-            <div class="articleText">
-              <p>
-                Super little intro to how to set up a Bootstrap project:
-                <a href="http://www.w3schools.com/bootstrap/bootstrap_get_started.asp" target="blank">http://www.w3schools.com/bootstrap/bootstrap_get_started.asp</a>
-              </p>
-              <p>
-                A guide to making a photo gallery in Bootstrap:
-                <a href="http://fearlessflyer.com/create-a-responsive-photo-gallery-with-bootstrap-framework/" target="blank">http://fearlessflyer.com/create-a-responsive-photo-gallery-with-bootstrap-framework/</a>
-              </p>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x200" alt="flexbox" class="module-card-img" /> -->
+              <button class="module-card-button"><a href="#">See More</a></button>
             </div>
-          </article>
+          </div>
+<!-- End card -->
 
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span class="weekNumber" id="lightbox">Making a Lightbox</span></h2>
-          </header>
-            <div class="articleText">
-              <p>
-                I pulled this info specifically for <a href="http://www.alecboehm.com">www.alecboehm.com</a>, which I built in Bootstrap:
-                <ul>
-                  <li>Bootstrap Lightbox<br>
-                    <a href="http://www.jasonbutz.info/bootstrap-lightbox/#home">http://www.jasonbutz.info/bootstrap-lightbox/#home</a></li>
-                  <li>HTML5Lightbox<br>
-                    <a href="https://html5box.com/html5lightbox/index.php">https://html5box.com/html5lightbox/index.php</a></li>
-                </ul>
-              http://www.jasonbutz.info/bootstrap-lightbox/#home
-              </p>
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Bootstrap</div>
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>A Framework</span>
+              </div>
             </div>
-          </article>
-
-          <article class="journalEntry">
-            <header class="articleHeader">
-              <h2><span id="oddsAndEnds">Odds and Ends</span></h2>
-              <div class="articleText">
-                <p>
-                  In my various experiments I've come across a few other bits and pieces that I thought might be useful at some point. This is my little collection, for future reference:
-                    <ul>
-                      <li><a href="http://markdotto.com/playground/3d-text/" target="blank">A recipe for 3D Text, using the text-shadow property, like this:</a>
-                        <p id="shadowTest">3D Text Test</p>
-                      </li>
-                      <li>
-                      <a href="https://css-tricks.com/viewport-sized-typography/" target="blank">Information on the "vw" typography unit for fonts scaled to the size of the viewport.</a>
-                      </li>
-                      <li>I discovered that when using the <code>position:relative</code> CSS rule, elements are stacked on top of one another, so it may be necessary to assign z-index values to the elements, to make sure that the right one ends up on top.</li>
-                    </ul>
-                </p>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x100" alt="responsiveDesign" class="module-card-img" /> -->
+              <div>
+                <p></p>
+              </div>
+              <button class="module-card-button"><a href="#">See More</a></button>
             </div>
-          </article>
+          </div>
+<!-- End card -->
+
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Experiments</div>
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Things I Want to Try</span>
+              </div>
+            </div>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x100" alt="responsiveDesign" class="module-card-img" /> -->
+              <div>
+                <p></p>
+              </div>
+              <button class="module-card-button"><a href="#">See More</a></button>
+            </div>
+          </div>
+<!-- End card -->
 
 
-        </section>
+<!-- Begin card -->
+          <div class="module-card">
+            <div class="module-card-title">Assorted Odds and Ends</div>
+            <!-- /module-card-meta-->
+            <div class="module-card-meta">
+              <div class="module-card-description">
+                <span>Fascinating and Inspiring Things</span>
+              </div>
+            </div>
+            <div class="module-card-bottom">
+              <!-- <img src="http://placehold.it/400x100" alt="responsiveDesign" class="module-card-img" /> -->
+              <div>
+                <p><a href="http://jenniferdewalt.com/" target="_blank">Jennifer DeWalt: 180 Websites in 180 Days</a></p>
+                <p><a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">Google Material Design site</a></p>
+              </div>
+              <button class="module-card-button"><a href="#">See More</a></button>
+            </div>
+          </div>
+<!-- End card -->
+
       </main>
 
-      <footer class="mainFooter">&copy; 2015</footer>
+      <footer class="mainFooter">&copy; Stephanie Argy 2015</footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

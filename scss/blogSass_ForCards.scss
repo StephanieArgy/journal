@@ -1,0 +1,206 @@
+@import "_reset.scss";
+
+//Mary Cassatt Color Palette
+$bodyBackgroundColor: #002266;
+$bodyH2Color: darkorange;
+$bodyTextColor: #222;
+$bodyTextLink: #002266*2;
+$introTextColor: white;
+$headerFooterBGColor: #002266/2;
+$headerFooterTextColor: white;
+$seeMoreButtonBGColor: #002266;
+
+
+@mixin roundedCorners($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin imageResize() {
+  display: block;
+  max-width: 100%;
+  width:400px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+@mixin vertical-gradient($start: $bodyBackgroundColor, $stop: $headerFooterBGColor) { background: ($start + $stop) / 2;
+    background: -webkit-gradient(linear, left top, left bottom, from($start), to($stop));
+    background: -moz-linear-gradient(center top, $start 0%, $stop 100%);
+    background: -moz-gradient(center top, $start 0%, $stop 100%);
+}
+
+body {
+  @include vertical-gradient;
+  // background-color: $bodyBackgroundColor;
+  color: $bodyTextColor;
+  font-family: Georgia;
+  line-height: 1.2em;
+  padding-bottom: 50px;
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      color: $bodyH2Color;
+      font-size: 1.4em;
+      padding: 10px 0;
+    }
+    h3 {
+      font-weight: bold;
+      margin-bottom: 1.3em;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+    a {
+      color: $bodyTextLink;
+    }
+  code {
+    color: maroon;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+  }
+
+.mainHeader {
+  background-color: $headerFooterBGColor;
+  color: $headerFooterTextColor;
+  margin-bottom: 10px;
+  overflow:auto;
+  padding: 15px;
+  h1 {
+    font-size: 4vw;
+    text-align: center;
+    margin: 2%;
+    }
+  .mainMenu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    li {
+      flex-direction: row;
+      font-weight: 800;
+      padding: 0px 10px;
+      }
+    }
+    a {
+      color: white;
+      list-style:none;
+      font-variant: small-caps;
+      text-decoration: none;
+    }
+  }
+
+.introText {
+  color: $introTextColor;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin: auto;
+  max-width: 80%;
+  padding: 20px;
+  text-align: left;
+  a {
+    color: darkorange;
+  }
+}
+
+//Styles for Cards
+
+* {
+  box-sizing: border-box;
+}
+
+.module-card-wrap {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.module-card {
+  @include roundedCorners(15px);
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  min-width: 100%;
+  padding: 10px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.module-card-title {
+  font-size: 120%;
+  font-weight: 700;
+}
+
+.module-card-meta {
+  display: flex;
+}
+
+.module-card-description {
+  color: $bodyH2Color;
+  font-family: verdana;
+  font-variant: small-caps;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+// .module-card-category, .module-card-author {
+//   flex: 1;
+// }
+
+// .module-card-author {
+//   text-align: right;
+// }
+
+.module-card-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* a flex: 1 also works here, but is buggy on IE11 */
+}
+
+.module-card-img {
+  margin: 20px 0;
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.module-card-button {
+  background: $seeMoreButtonBGColor;
+  color: white;
+  font-family: verdana;
+  font-variant: small-caps;
+  border: none;
+  margin-top: auto;
+  padding: 10px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .module-card {
+    width: 48%;
+    margin: 0 auto 2%;
+    min-width: 0;
+  }
+}
+
+.mainFooter {
+  background-color: $headerFooterBGColor;
+  clear: both;
+  color: $headerFooterTextColor;
+  padding: 10px;
+  position: fixed;
+     bottom: 0;
+  text-align: right;
+  width: 100%;
+  }
