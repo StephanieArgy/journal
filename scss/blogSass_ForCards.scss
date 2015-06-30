@@ -92,12 +92,12 @@ body {
       line-height: 1.4em;
       padding: 0px 30px;
       }
-    }
-    a {
-      color: white;
-      list-style:none;
-      font-variant: small-caps;
-      text-decoration: none;
+      a {
+        color: white;
+        list-style:none;
+        font-variant: small-caps;
+        text-decoration: none;
+        }
     }
   }
 
@@ -199,6 +199,14 @@ body {
     color: white;
     text-decoration: none;
   }
+}
+
+.thingsToTry {
+  list-style: square inside;
+}
+
+.finishedExperiment {
+  text-decoration: line-through;
 }
 
 .mainFooter {

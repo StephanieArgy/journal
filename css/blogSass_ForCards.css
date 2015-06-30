@@ -96,11 +96,11 @@ body {
       font-weight: 800;
       line-height: 1.4em;
       padding: 0px 30px; }
-  .mainHeader a {
-    color: white;
-    list-style: none;
-    font-variant: small-caps;
-    text-decoration: none; }
+    .mainHeader .mainMenu a {
+      color: white;
+      list-style: none;
+      font-variant: small-caps;
+      text-decoration: none; }
 
 .introText {
   color: white;
@@ -183,6 +183,12 @@ body {
   .module-card-button a {
     color: white;
     text-decoration: none; }
+
+.thingsToTry {
+  list-style: square inside; }
+
+.finishedExperiment {
+  text-decoration: line-through; }
 
 .mainFooter {
   background-color: #001133;
