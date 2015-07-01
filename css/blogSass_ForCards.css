@@ -70,6 +70,19 @@ body {
     font-size: 1.2em;
     font-weight: bold; }
 
+/* The animation code */
+@keyframes bodyTransition {
+  from {
+    background-color: #bbb; }
+  to {
+    background-color: #555; } }
+
+/* The element to apply the animation to */
+body {
+  background-color: #555;
+  animation-name: bodyTransition;
+  animation-duration: 10s; }
+
 .mainHeader {
   background-color: #001133;
   color: white;
@@ -134,7 +147,7 @@ body {
   display: flex;
   flex-direction: column; }
   .module-card:hover {
-    box-shadow: 5px 5px 5px #777;
+    box-shadow: 5px 5px 5px #222;
     left: -1px;
     top: -1px; }
   @media screen and (min-width: 800px) {
