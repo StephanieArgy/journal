@@ -2,7 +2,9 @@
 
 //Mary Cassatt Color Palette
 $bodyBackgroundColor: #002266;
+$frontCard_H2Color: #333;
 $bodyH2Color: darkorange;
+$bodyH3Color: darkorange;
 $bodyTextColor: #222;
 $bodyTextLink: #002266*2;
 $introTextColor: white;
@@ -129,7 +131,109 @@ body {
   }
 }
 
-//Styles for Cards
+//Styles for New Cards
+
+.flipForFlexbox {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.flip-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    margin: 10px auto 10px;
+
+  }
+
+.flip-container,
+.flip-container .front-side,
+.flip-container .back-side {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.flip-container .front-side,
+.flip-container .back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: 1.2s;
+    -webkit-transition: .3s;
+    font-size: 120%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    @include roundedCorners(4px);
+}
+
+.flip-container .back-side {
+	box-shadow: 5px 5px 25px #222;
+  display: flex;
+  flex-wrap: wrap;
+    background-color: #222;
+    z-index: 1;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.flip-container .front-side {
+    background-color: #fff;
+    border: 1px solid #000;
+    z-index: 2;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    h2 {
+      color: $frontCard_H2Color;
+      font-size: 1.2em;
+    }
+}
+
+.flip-container:hover .front-side {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip-container:hover .back-side {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+/*    -ms-transform: scale(2,2); /* IE 9 */
+    /*-webkit-transform: scale(2,2); /* Safari */
+    /*transform: scale(2,2);*/
+}
+
+.cardDescription {
+    color: $bodyH2Color;
+    font-family: verdana;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.cardText {
+  padding: 15px;
+  text-align: left;
+  p {
+    color: #888;
+  }
+}
+
+p {
+	color: black;
+	font-size: 16px;
+}
+
+p > a {
+	color: #ddd;
+}
+
+//Styles for Old Cards
 
 * {
   box-sizing: border-box;
