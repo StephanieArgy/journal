@@ -141,7 +141,7 @@ body {
 .flip-container,
 .flip-container .front-side,
 .flip-container .back-side {
-  min-width: 300px;
+  width: 300px;
   min-height: 300px; }
 
 .flip-container .front-side,
@@ -185,7 +185,18 @@ body {
   transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg); }
 
+.flip-container:focus .front-side {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg); }
+
 .flip-container:hover .back-side {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  /*    -ms-transform: scale(2,2); /* IE 9 */
+  /*-webkit-transform: scale(2,2); /* Safari */
+  /*transform: scale(2,2);*/ }
+
+.flip-container:focus .back-side {
   transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   /*    -ms-transform: scale(2,2); /* IE 9 */
