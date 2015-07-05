@@ -1,0 +1,256 @@
+/*
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-image: url(../img/bg_texture_Clouds_blur.jpg);
+  background-repeat: no-repeat scroll;
+  background-position: center top;
+  position: relative;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #222;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.2em;
+  padding-bottom: 50px; }
+  body h1 {
+    font-size: 2em; }
+  body h2 {
+    color: #A2834E;
+    font-size: 1.4em;
+    padding: 10px 0; }
+  body h3 {
+    font-weight: bold;
+    margin-bottom: 1.3em; }
+  body p {
+    padding-bottom: 20px; }
+  body a {
+    color: #ddd; }
+  body code {
+    color: maroon;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold; }
+
+/* The animation code */
+/* The element to apply the animation to */
+.mainHeader {
+  background-color: #080400;
+  color: white;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding: 15px; }
+  .mainHeader h1 {
+    font-size: 4vw;
+    text-align: center;
+    margin: 2%; }
+  .mainHeader .mainMenu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    @media screen and (min-width: 600px) {
+      .mainHeader .mainMenu {
+        flex-direction: row; } }
+    .mainHeader .mainMenu li {
+      font-size: 1.3em;
+      font-weight: 800;
+      line-height: 1.4em;
+      padding: 0px 30px; }
+    .mainHeader .mainMenu a {
+      color: white;
+      list-style: none;
+      font-variant: small-caps;
+      text-decoration: none; }
+
+.introText {
+  color: #ffffea;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: light;
+  line-height: 1.2em;
+  margin: auto;
+  max-width: 80%;
+  padding: 20px;
+  text-align: left; }
+
+.flexboxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+article {
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 25px #222;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 1rem;
+  width: 20rem; }
+
+.flipForFlexbox {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+.flip-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  margin: 10px auto 10px; }
+
+.flip-container,
+.flip-container .front-side,
+.flip-container .back-side {
+  width: 300px;
+  min-height: 300px; }
+
+.flip-container .front-side,
+.flip-container .back-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: 1.2s;
+  -webkit-transition: .3s;
+  font-size: 120%;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.flip-container .back-side {
+  box-shadow: 5px 5px 25px #222;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #222;
+  z-index: 1;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); }
+
+.flip-container .front-side {
+  background-color: #fff;
+  border: 1px solid #000;
+  z-index: 2;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg); }
+  .flip-container .front-side h2 {
+    color: #333;
+    font-size: 1.2em; }
+
+.flip-container:hover .front-side {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg); }
+
+.flip-container:focus .front-side {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg); }
+
+.flip-container:hover .back-side {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  /*    -ms-transform: scale(2,2); /* IE 9 */
+  /*-webkit-transform: scale(2,2); /* Safari */
+  /*transform: scale(2,2);*/ }
+
+.flip-container:focus .back-side {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  /*    -ms-transform: scale(2,2); /* IE 9 */
+  /*-webkit-transform: scale(2,2); /* Safari */
+  /*transform: scale(2,2);*/ }
+
+.cardDescription {
+  color: #A2834E;
+  font-family: 'Lato', sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 15px;
+  margin-top: 5px; }
+
+.cardText {
+  padding: 15px;
+  text-align: left; }
+  .cardText p {
+    color: #888; }
+
+p {
+  color: black;
+  font-size: 16px; }
+
+p > a {
+  color: #ddd; }
+
+.thingsToTry {
+  list-style: square inside; }
+
+.finishedExperiment {
+  text-decoration: line-through; }
+
+.mainFooter {
+  background-color: #080400;
+  clear: both;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%; }
