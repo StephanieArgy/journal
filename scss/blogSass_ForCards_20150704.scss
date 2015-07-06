@@ -108,12 +108,20 @@ body {
     margin: 2%;
     }
   .mainMenu {
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
     align-items: center;
-    display: flex;
+      -webkit-align-items: center;
     justify-content: center;
+      -webkit-justify-content: center;
     flex-direction: column;
+      -webkit-flex-direction: column;
       @media screen and (min-width: 600px) {
           flex-direction: row;
+              -webkit-flex-direction: row;
       }
     li {
       font-size: 1.3em;
@@ -145,11 +153,19 @@ body {
 // Simplfied Cards -- July 5, 2015
 
 .flexboxContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
   flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  align-items: stretch;
+    -webkit-align-items: stretch;
+  justify-content: center;
+    -webkit-justify-content: center;
+  flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
 }
 
 article {
@@ -161,97 +177,6 @@ article {
     margin-right: 4%;
     padding: 1rem;
     width: 20rem;
-}
-
-
-//Styles for New Cards
-
-.flipForFlexbox {
-  max-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.flip-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
-    margin: 10px auto 10px;
-
-  }
-
-.flip-container,
-.flip-container .front-side,
-.flip-container .back-side {
-    width: 300px;
-    min-height: 300px;
-}
-
-.flip-container .front-side,
-.flip-container .back-side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transition: 1.2s;
-    -webkit-transition: .3s;
-    font-size: 120%;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 20px;
-    @include roundedCorners(4px);
-}
-
-.flip-container .back-side {
-	box-shadow: 5px 5px 25px #222;
-  display: flex;
-  flex-wrap: wrap;
-    background-color: #222;
-    z-index: 1;
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-}
-
-.flip-container .front-side {
-    background-color: #fff;
-    border: 1px solid #000;
-    z-index: 2;
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    h2 {
-      color: $frontCard_H2Color;
-      font-size: 1.2em;
-    }
-}
-
-.flip-container:hover .front-side {
-    transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-}
-
-.flip-container:focus .front-side {
-    transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-}
-
-.flip-container:hover .back-side {
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-/*    -ms-transform: scale(2,2); /* IE 9 */
-    /*-webkit-transform: scale(2,2); /* Safari */
-    /*transform: scale(2,2);*/
-}
-
-.flip-container:focus .back-side {
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-/*    -ms-transform: scale(2,2); /* IE 9 */
-    /*-webkit-transform: scale(2,2); /* Safari */
-    /*transform: scale(2,2);*/
 }
 
 .cardDescription {
@@ -278,98 +203,6 @@ p {
 p > a {
 	color: #ddd;
 }
-//
-// //Styles for Old Cards
-//
-// * {
-//   box-sizing: border-box;
-// }
-//
-// .module-card-wrap {
-//   max-width: 80%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 0 auto;
-// }
-//
-// .module-card {
-//   @include roundedCorners(4px);
-//   background: #fff;
-//   border: 1px solid #000;
-//   margin: 10px auto 10px;
-//   min-width: 100%;
-//   padding: 10px;
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   &:hover {
-//       box-shadow: 5px 5px 5px #222;
-//       left: -1px;
-//       top: -1px;
-//   }
-//   @media screen and (min-width: 800px) {
-//       width: 48%;
-//       margin: 10px auto 10px;
-//       min-width: 0;
-//   }
-//   @media screen and (min-width: 1200px) {
-//       width: 30%;
-//       margin: 10px auto 10px;
-//       min-width: 0;
-//   }
-// }
-//
-// .module-card-title {
-//   font-size: 120%;
-//   font-weight: 700;
-// }
-//
-// .module-card-meta {
-//   display: flex;
-// }
-//
-// .module-card-description {
-//   color: $bodyH2Color;
-//   font-family: verdana;
-//   font-variant: small-caps;
-//   margin-bottom: 15px;
-//   margin-top: 5px;
-// }
-//
-// // .module-card-category, .module-card-author {
-// //   flex: 1;
-// // }
-//
-// // .module-card-author {
-// //   text-align: right;
-// // }
-//
-// .module-card-bottom {
-//   display: flex;
-//   flex-direction: column;
-//   flex-grow: 1; /* a flex: 1 also works here, but is buggy on IE11 */
-// }
-//
-// .module-card-img {
-//   margin: 20px 0;
-//   align-self: center;
-//   width: 100%;
-//   height: auto;
-// }
-//
-// .module-card-button {
-//   background: $seeMoreButtonBGColor;
-//   color: white;
-//   font-family: verdana;
-//   font-variant: small-caps;
-//   border: none;
-//   margin-top: auto;
-//   padding: 10px;
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
-// }
 
 .thingsToTry {
   list-style: square inside;
