@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Setting Up a New Repo in Github</title>
+    <link rel="stylesheet" href="css/cheatsheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <p>In Primer Pro, our first JavaScript/jQuery assignment started with us having to make a repository and establish a remote on github.com.  "This should be review," said the instructions.</p>
+    <p>
+      So here's my review -- a knucklehead cheatsheet that I made for myself (and kept returning to regularly):</p>
+      <h4>To Create a New Project:</h4>
+      <p>
+        <ol>
+          <li>On GitHub, make a new repository.</li>
+          <li>In Terminal, navigate to the directory that will contain the local directory for that respository.</li>
+          <li>In that directory: <code>git clone https://github.com/MyGitHubName/repositoryname.git</code>.</li>
+          <li>In Terminal, go into newly created local repo clone using <code>cd</code>.</li>
+          <li>Back on GitHub, create a new branch called gh-pages.</li>
+          <li>In Terminal (and in the new directory): <code>git fetch origin gh-pages</code>.  (At this point, only master branch will be visible with git branch.)</li>
+          <li>In terminal: <code>git checkout gh-pages</code>. (Now git branch will show both branches.)</li>
+          <li>To start working -- in Terminal: <code>git checkout master</code>.</li>
+        </ol>
+      </p>
+      <p>
+      <h4>After working, to add changes and update gh-pages:</h4>
+        <ol>
+          <li>In terminal, check status, see what's changed: <code>git status</code>.</li>
+          <li>Add changes: <code>git add</code> (followed by files that have changed or added, one git add command for each). This puts the files into the staging area, so that they can be committed.</li>
+          <li>Commit changes: <code>git commit -m"Message describing this set of changes"</code></li>
+          <li>Push changes to master branch online: <code>git push</code>.</li>
+          <li>Change to gh-pages branch: <code>git checkout gh-pages</code>.</li>
+          <li>Merge content from master branch: <code>git merge master</code>.</li>
+          <li>Update online version of gh-pages: <code>git push</code>.</li>
+        </ol>
+      </p>
+  </body>
+</html>
