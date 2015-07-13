@@ -58,7 +58,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #222;
+  color: #ddd;
   font-family: 'Lato', sans-serif;
   line-height: 1.2em;
   padding-bottom: 50px; }
@@ -176,7 +176,7 @@ article {
     color: #888; }
 
 p {
-  color: black;
+  color: #888;
   font-size: 16px; }
 
 p > a {
@@ -186,10 +186,19 @@ a.personalCheatsheet {
   color: #BFFFFF; }
 
 .thingsToTry {
-  list-style: square inside; }
+  list-style: square; }
 
-.finishedExperiment {
-  text-decoration: line-through; }
+.thingsToTry li {
+  margin-top: 1.3rem; }
+
+.experimentResources {
+  list-style: inside circle; }
+  .experimentResources li {
+    margin-top: .2em; }
+    .experimentResources li a {
+      color: #bbb;
+      position: relative;
+      left: 2%; }
 
 .mainFooter {
   background-color: #080400;

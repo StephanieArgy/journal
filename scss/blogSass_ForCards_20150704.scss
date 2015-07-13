@@ -5,7 +5,7 @@ $bodyBackgroundColor: pink;
 $frontCard_H2Color: #333;
 $bodyH2Color: #A2834E;
 $bodyH3Color: #A2834E;
-$bodyTextColor: #222;
+$bodyTextColor: #ddd;
 $bodyTextLink: #ddd;
 $borderColor: #A2834E;
 $introTextColor: #A2834E*3;
@@ -196,7 +196,7 @@ article {
 }
 
 p {
-	color: black;
+	color: #888;
 	font-size: 16px;
 }
 
@@ -209,11 +209,23 @@ a.personalCheatsheet {
 }
 
 .thingsToTry {
-  list-style: square inside;
+  list-style: square;
 }
 
-.finishedExperiment {
-  text-decoration: line-through;
+.thingsToTry li {
+  margin-top: 1.3rem;
+}
+
+.experimentResources {
+  list-style: inside circle;
+  li {
+      margin-top: .2em;
+      a {
+        color: #bbb;
+        position: relative;
+        left: 2%;
+      }
+  }
 }
 
 .mainFooter {
